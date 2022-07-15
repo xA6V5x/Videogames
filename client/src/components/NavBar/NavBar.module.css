@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+:root {
+     --width: 275px;
+     --padding: 10px;
+     --hovercolor: rgba(0, 100, 146, 0.799);
+     /* --hovercolor: #043f7f; */
+     --width-collapsed: 50px;
+}
+
+.container {
+     background: linear-gradient(-50deg, #052649 0%, #1f0557 40%, #28065a 60%, #5a0a65 100%);
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 18px;
+     padding: 0;
+     margin: 0;
+     /* margin-left: var(--width-collapsed); */
+     width: var(--width);
+     height: 100%;
+     color: white;
+     position: fixed;
+     left: 0;
+     top: 0;
+}
+
+.sidemenu {
+     color: white;
+     position: fixed;
+     height: 100%;
+     left: 0;
+     top: 0;
+}
+
+Link {
+     color: white;
+     text-decoration: none;
+}
+
+/* -----------PROFILE------------- */
+.profile {
+     padding: var(--padding);
+     margin: 0 15px;
+     text-align: center;
+     border-bottom: solid 3px var(--hovercolor);
+}
+
+.photo {
+     box-sizing: border-box;
+     padding: var(--padding);
+     margin: 0 auto;
+}
+
+.photo img {
+     border-radius: 50%;
+     width: 80%;
+}
+
+/* -------------ITEM----------------- */
+.menu_items {
+     overflow: hidden;
+     border-bottom: solid 3px var(--hovercolor);
+     margin: 10px 15px 0;
+}
+
+.item {
+     width: var(--width - 15px);
+     padding: 0 5px 10px;
+}
+
+.icon,
+.title {
+     font-size: 22px;
+     vertical-align: middle;
+     overflow: hidden;
+     display: inline-block;
+}
+
+.item a {
+     display: block;
+     border-radius: 10px;
+}
+
+.item .title {
+     padding: var(--padding) 0;
+}
+
+.title span {
+     font-family: 'Baloo 2', cursive;
+}
+
+.item a:hover {
+     background-color: var(--hovercolor);
+}
+
+.icon {
+     display: inline-block;
+     box-sizing: border-box;
+     padding: var(--padding);
+     width: var(--width-collapsed);
+}
+
+.icon img {
+     width: 100%;
+}
