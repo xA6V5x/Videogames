@@ -64,7 +64,7 @@ const LandingPage = () => {
                     </p>
 
                     <Link className={styles.container_link} to={'/Home'}>
-                         <button>
+                         <button className={styles.link_button}>
                               <span className={styles.enter}>GET STARTED</span>
                               <i></i>
                          </button>

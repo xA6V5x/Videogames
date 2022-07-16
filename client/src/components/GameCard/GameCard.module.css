@@ -95,7 +95,16 @@ a {
      text-align: center;
      font-size: 15px;
      font-family: 'B612', sans-serif;
-     padding-bottom: 15px;
+     padding-bottom: 5px;
+}
+
+.starsArea {
+     text-align: center;
+}
+
+.star_img {
+     width: 26px;
+     padding: 0 3px 0;
 }
 
 @media (max-width: 1000px) {

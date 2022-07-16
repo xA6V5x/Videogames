@@ -1,0 +1,89 @@
+.intro {
+     position: fixed;
+     top: 0;
+     background-image: url('https://c.tenor.com/fPzeECVvqWMAAAAC/game-over-fail.gif');
+     background-repeat: no-repeat;
+     background-size: 1050px;
+     background-position: right center;
+     width: 100vw;
+     height: 100vh;
+     background-color: rgb(251, 205, 84);
+}
+
+.introText {
+     padding-top: 8%;
+     width: 60%;
+     text-align: center;
+     font-size: 3.5rem;
+}
+
+.introText h1 {
+     font-family: 'Trade Winds', cursive;
+     color: rgb(149, 2, 2);
+     text-shadow: 0 15px 10px rgb(0, 0, 0);
+}
+
+.introText h2 {
+     /* font-family: 'Trade Winds', cursive; */
+     font-family: 'Press Start 2P', cursive;
+     margin: 0;
+     color: rgb(139, 139, 139);
+     text-shadow: 0 10px 10px rgb(0, 0, 0);
+}
+
+.buttonContainer {
+     margin: auto;
+     width: 100%;
+     justify-content: center;
+     margin-top: 0;
+}
+
+.buttonContainer h2 {
+     color: aqua;
+     margin: 40px;
+}
+
+.introButton {
+     cursor: pointer;
+     background: rgba(13, 40, 156, 0.916);
+     -webkit-border-radius: 28;
+     -moz-border-radius: 28;
+     border-radius: 28px;
+     font-family: Arial;
+     border-color: #fff;
+     color: #090a00;
+     font-size: 3rem;
+     padding: 2rem;
+     text-decoration: none;
+}
+
+.introButton:hover {
+     color: #ffffff;
+     background: #a20a0ae6;
+     text-decoration: none;
+}
+
+.introButton span {
+     color: #fff;
+     font-family: 'Press Start 2P', cursive;
+     font-weight: 600px;
+}
+
+@media (max-width: 1200px) {
+     .intro {
+          background-position: center center;
+          background-repeat: repeat;
+          background-size: 500px;
+     }
+     .introText {
+          margin: auto;
+          width: 100%;
+          height: 100%;
+          padding-top: 10%;
+          backdrop-filter: blur(5px);
+     }
+     .introText h1,
+     h2 {
+          padding-bottom: 30px;
+     }
+}

@@ -20,14 +20,14 @@ const GameDetail = () => {
 
      return (
           <div className={styles.container}>
+               <NavBar />
                {idGame == id ? (
                     <div className={styles.container}>
-                         <NavBar />
                          <div className={styles.container_details}>
                               <h1 className={styles.title}>{name}</h1>
                               <div className={styles.details_portada}>
                                    <div className={styles.details_portada_img}>
-                                        <img src={img} />
+                                        <img src={img} alt="img game" />
                                    </div>
 
                                    <div className={styles.details_all}>

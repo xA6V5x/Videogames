@@ -12,132 +12,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
 
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: lato;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: lato;
 }
 
 body {
-  background-image: url('../../assets/img/GameOverFondo.jpg');
-  background-size: 120%;
-  background-attachment: fixed;
-  background-position: center;
+     background-image: url('../../assets/img/GameOverFondo.jpg');
+     background-size: 120%;
+     background-attachment: fixed;
+     background-position: center;
 }
 
 .container {
-  position: absolute;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
+     position: absolute;
+     display: flex;
+     width: 100vw;
+     height: 100vh;
 }
 
 /* Logos ------------------------------------------ */
 
 .logos_pc {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  z-index: 100;
-  margin-left: 76vw;
-  margin-top: 10px;
-  height: 50px;
+     display: flex;
+     flex-direction: row;
+     position: absolute;
+     z-index: 100;
+     margin-left: 76vw;
+     margin-top: 10px;
+     height: 50px;
 }
 
 .logos_pc img {
-  width: 48px;
+     width: 48px;
 }
 
 .logos_pc .logo {
-  width: 30px;
-  height: 50px;
-  padding: 20px 42px 0px;
+     width: 30px;
+     height: 50px;
+     padding: 20px 42px 0px;
 }
 
 /* Logos Responsive ------------------------------ */
 
 .logos_responsive {
-  display: none;
-  margin: auto;
-  margin-left: 25%;
+     display: none;
+     margin: auto;
+     margin-left: 25%;
 }
 
 .logos_responsive .logo {
-  width: 68px;
+     width: 68px;
 }
-
 
 /* Info -------------------------------------------- */
 
 .home_info {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 500px;
-  height: 100%;
-  border-radius: 15px;
-  margin: 0px;
-  z-index: 2;
-  backdrop-filter: blur(15px);
-  background: rgba(6, 19, 52, 0.34);
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 500px;
+     height: 100%;
+     border-radius: 15px;
+     margin: 0px;
+     z-index: 2;
+     backdrop-filter: blur(15px);
+     background: rgba(6, 19, 52, 0.34);
 }
 
 /* Fonts ------------------------------------- */
 
 .home_info h1 {
-  font-family: 'Audiowide', cursive;
-  /* font-family: 'Goldman', cursive; */
-  /* font-family: 'B612', sans-serif; */
-  /* font-family: 'Cinzel Decorative', cursive; */
-  /* font-family: 'Kodchasan', sans-serif; */
-  /* font-family: 'Trade Winds', cursive; */
-  /* font-family: 'Wallpoet', cursive; */
-  /* font-family: 'Black Ops One', cursive; */
-  /* font-family: 'Press Start 2P', cursive; */
-  /* font-family: 'Sirin Stencil', cursive; */
-  font-size: 60px;
-  text-align: center;
-  background-image: linear-gradient(20deg, #9700cf 20px, #1c027b);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  margin-top: 50px;
+     font-family: 'Audiowide', cursive;
+     /* font-family: 'Goldman', cursive; */
+     /* font-family: 'B612', sans-serif; */
+     /* font-family: 'Cinzel Decorative', cursive; */
+     /* font-family: 'Kodchasan', sans-serif; */
+     /* font-family: 'Trade Winds', cursive; */
+     /* font-family: 'Wallpoet', cursive; */
+     /* font-family: 'Black Ops One', cursive; */
+     /* font-family: 'Press Start 2P', cursive; */
+     /* font-family: 'Sirin Stencil', cursive; */
+     font-size: 60px;
+     text-align: center;
+     background-image: linear-gradient(20deg, #9700cf 20px, #1c027b);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -moz-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -moz-text-fill-color: transparent;
+     margin-top: 50px;
 }
 
 .home_info img {
-  padding: 40px 0px;
-  width: 60%;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  border-radius: 50%;
-  background-size: 100% auto;
+     padding: 40px 0px;
+     width: 60%;
+     background-repeat: no-repeat;
+     background-position: 50%;
+     border-radius: 50%;
+     background-size: 100% auto;
 }
 
 .home_info p,
 .a6v5 {
-  font-family: 'Baloo 2', cursive;
-  /* font-family: 'Sirin Stencil', cursive; */
-  /* font-family: 'Amaranth', sans-serif; */
-  /* font-family: 'Macondo', cursive; */
-  font-size: 25px;
-  padding: 0px 25px;
-  text-align: center;
-  color: rgb(187, 203, 243);
-  margin-top: 10px;
-  text-decoration: none;
+     font-family: 'Baloo 2', cursive;
+     /* font-family: 'Sirin Stencil', cursive; */
+     /* font-family: 'Amaranth', sans-serif; */
+     /* font-family: 'Macondo', cursive; */
+     font-size: 25px;
+     padding: 0px 25px;
+     text-align: center;
+     color: rgb(187, 203, 243);
+     margin-top: 10px;
+     text-decoration: none;
 }
 
 .container_link {
-  margin-top: 80px;
-  cursor: pointer;
+     margin-top: 80px;
+     cursor: pointer;
 }
 
-/* .home_info button {
+/* .home_info .link_button {
   width: 250px;
   height: 60px;
   background-color: rgba(6, 0, 123, 0.439);
@@ -147,209 +145,208 @@ body {
   transition: 0.3s;
 }
 
-button:hover {
+.link_button:hover {
   background-color:rgba(139, 0, 148, 0.439); 
 }
 */
 
 .enter {
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
-  color: rgb(187, 203, 243);
-  text-decoration: none;
-  font-size: 20px;
+     font-family: 'Roboto', sans-serif;
+     font-weight: lighter;
+     color: rgb(187, 203, 243);
+     text-decoration: none;
+     font-size: 20px;
 }
 
-button {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 10px 30px;
-  transition: 0.5s;
-  position: relative;
-  font-size: 17px;
-  /* background: #333; */
-  border: none;
-  color: #fff;
-  cursor: pointer;
+.link_button {
+     text-transform: uppercase;
+     letter-spacing: 0.1em;
+     padding: 10px 30px;
+     transition: 0.5s;
+     position: relative;
+     font-size: 17px;
+     /* background: #333; */
+     border: none;
+     color: #fff;
+     cursor: pointer;
 }
 
-button:hover {
-  letter-spacing: 0.25em;
-  /* background: #ff1867; */
-  background-color: rgba(139, 0, 148, 0.439);
-  /* color: #ff1867; */
-  color: rgba(139, 0, 148, 0.439);
-  /* box-shadow: 0 0 45px #ff1867; */
-  box-shadow: 0 0 40px 10px rgba(139, 0, 148, 0.439);
+.link_button:hover {
+     letter-spacing: 0.25em;
+     /* background: #ff1867; */
+     background-color: rgba(139, 0, 148, 0.439);
+     /* color: #ff1867; */
+     color: rgba(139, 0, 148, 0.439);
+     /* box-shadow: 0 0 45px #ff1867; */
+     box-shadow: 0 0 40px 10px rgba(139, 0, 148, 0.439);
 }
 
-button::before {
-  content: '';
-  position: absolute;
-  inset: 2px;
-  /* background: #222222; */
-  /* background-color:rgba(139, 0, 148, 0.439);  */
-  background-color: rgb(13, 9, 75);
+.link_button::before {
+     content: '';
+     position: absolute;
+     inset: 2px;
+     /* background: #222222; */
+     /* background-color:rgba(139, 0, 148, 0.439);  */
+     background-color: rgb(13, 9, 75);
 }
 
-button span {
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
+.link_button span {
+     position: relative;
+     z-index: 1;
+     cursor: pointer;
 }
 
-button i {
-  position: absolute;
-  inset: 0;
-  display: block;
-  background-color: #1c027b;
-  cursor: pointer;
+.link_button i {
+     position: absolute;
+     inset: 0;
+     display: block;
+     background-color: #1c027b;
+     cursor: pointer;
 }
 
-button i::before {
-  content: '';
-  position: absolute;
-  border: 2px solid #ff1867;
-  width: 7px;
-  height: 4px;
-  top: -3.5px;
-  left: 80%;
-  background: #222222;
-  transform: translateX(-50%);
-  transition: 0.5s;
+.link_button i::before {
+     content: '';
+     position: absolute;
+     border: 2px solid #ff1867;
+     width: 7px;
+     height: 4px;
+     top: -3.5px;
+     left: 80%;
+     background: #222222;
+     transform: translateX(-50%);
+     transition: 0.5s;
 }
 
-button:hover i::before {
-  width: 20px;
-  left: 20%;
+.link_button:hover i::before {
+     width: 20px;
+     left: 20%;
 }
 
-button i::after {
-  content: '';
-  position: absolute;
-  border: 2px solid #ff1867;
-  width: 7px;
-  height: 4px;
-  bottom: -3.5px;
-  left: 20%;
-  background: #222222;
-  transform: translateX(-50%);
-  transition: 0.5s;
+.link_button i::after {
+     content: '';
+     position: absolute;
+     border: 2px solid #ff1867;
+     width: 7px;
+     height: 4px;
+     bottom: -3.5px;
+     left: 20%;
+     background: #222222;
+     transform: translateX(-50%);
+     transition: 0.5s;
 }
 
-button:hover i::after {
-  width: 20px;
-  left: 80%; 
+.link_button:hover i::after {
+     width: 20px;
+     left: 80%;
 }
 
-button i:hover {
-  background-color: rgba(139, 0, 148, 0.439);
+.link_button i:hover {
+     background-color: rgba(139, 0, 148, 0.439);
 }
 
 /* Slider -------------------------------------------------- */
 
 .slider_frame {
-  position: absolute;
-  width: 69%;
-  height: auto;
-  margin-top: 100px;
-  right: 75px;
-  overflow: hidden;
-  border-radius: 20px;
+     position: absolute;
+     width: 69%;
+     height: auto;
+     margin-top: 100px;
+     right: 75px;
+     overflow: hidden;
+     border-radius: 20px;
 }
 
 .slider_frame ul {
-  display: flex;
-  padding: 0;
-  width: 400%;
+     display: flex;
+     padding: 0;
+     width: 400%;
 
-  animation: slide 20s infinite alternate ease-in-out;
+     animation: slide 20s infinite alternate ease-in-out;
 }
 
 .slider_frame li {
-  width: 100%;
-  list-style: none;
+     width: 100%;
+     list-style: none;
 }
 
 .slider_frame img {
-  width: 100%;
+     width: 100%;
 }
 
 @keyframes slide {
-  0% {
-    margin-left: 0;
-  }
+     0% {
+          margin-left: 0;
+     }
 
-  15% {
-    margin-left: 0;
-  }
+     15% {
+          margin-left: 0;
+     }
 
-  20% {
-    margin-left: -100%;
-  }
+     20% {
+          margin-left: -100%;
+     }
 
-  45% {
-    margin-left: -100%;
-  }
+     45% {
+          margin-left: -100%;
+     }
 
-  50% {
-    margin-left: -200%;
-  }
+     50% {
+          margin-left: -200%;
+     }
 
-  70% {
-    margin-left: -200%;
-  }
+     70% {
+          margin-left: -200%;
+     }
 
-  75% {
-    margin-left: -300%;
-  }
+     75% {
+          margin-left: -300%;
+     }
 
-  100% {
-    margin-left: -300%;
-  }
+     100% {
+          margin-left: -300%;
+     }
 }
 
 /* DOTS -------------------------------------- */
 
 .dots {
-  width: 160px;
-  height: auto;
-  margin-top: 55px;
-  margin-left: 60px;
-  z-index: 5;
+     width: 160px;
+     height: auto;
+     margin-top: 55px;
+     margin-left: 60px;
+     z-index: 5;
 }
 
 /*--------RESPONSIVE--------  */
 
 @media (max-width: 1422px) {
-  .logos_pc {
-    display: none;
-  }
+     .logos_pc {
+          display: none;
+     }
 
-  .logos_responsive {
-    display: flex;
-  }
+     .logos_responsive {
+          display: flex;
+     }
 }
 
 @media (max-width: 1000px) {
-  .slider_frame {
-    display: none;
-  }
+     .slider_frame {
+          display: none;
+     }
 
-  .home_info {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    display: flex;
-    height: 100%;
-  }
+     .home_info {
+          width: 100vw;
+          height: 100vh;
+          position: absolute;
+          display: flex;
+          height: 100%;
+     }
 
-  .home_info .img_gameover {
-    width: 300px;
-  }
+     .home_info .img_gameover {
+          width: 300px;
+     }
 
-  .logos_responsive {
-    margin: auto;
-  }
-
+     .logos_responsive {
+          margin: auto;
+     }
 }

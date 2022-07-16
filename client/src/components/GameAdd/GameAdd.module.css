@@ -1,0 +1,21 @@
+body {
+     margin: 0;
+}
+
+.container {
+     margin: 0;
+     padding: 0;
+}
+
+.gamesArea {
+     display: flex;
+     /* margin-top: 150px; */
+     /* margin-left: 300px; */
+     margin-left: 280px;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     backdrop-filter: blur(12px);
+     border-radius: 25px;
+     /* background-color: rgb(23, 23, 23); */
+     /* background-color: #000b17 ; */
+}

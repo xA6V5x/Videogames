@@ -5,25 +5,121 @@ body {
 .container {
      margin: 0;
      padding: 0;
-     width: 100%;
 }
 
-.gamesArea {
-     display: flex;
-     /* margin-top: 150px; */
-     /* margin-left: 300px; */
-     margin-left: 17%;
+/* ---------------------NAVBAR-----------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+:root {
+     --width: 275px;
+     --padding: 10px;
+     --hovercolor: rgba(0, 100, 146, 0.799);
+     /* --hovercolor: #043f7f; */
+     --width-collapsed: 50px;
+}
+
+.container_NavBar {
+     background: linear-gradient(-50deg, #052649 0%, #1f0557 40%, #28065a 60%, #5a0a65 100%);
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 18px;
+     padding: 0;
+     margin: 0;
+     /* margin-left: var(--width-collapsed); */
+     width: var(--width);
+     height: 100%;
+     color: white;
+     position: fixed;
+     left: 0;
+     top: 0;
+}
+
+.sidemenu {
+     color: white;
+     position: fixed;
+     height: 100%;
+     left: 0;
+     top: 0;
+}
+
+Link {
+     color: white;
+     text-decoration: none;
+}
+
+/* -----------PROFILE------------- */
+.profile {
+     padding: var(--padding);
+     margin: 0 15px;
+     text-align: center;
+}
+
+.photo {
+     box-sizing: border-box;
+     padding: var(--padding);
+     margin: 0 auto;
+}
+
+.photo img {
+     border-radius: 50%;
      width: 80%;
-     height: auto;
-     flex-wrap: wrap;
-     justify-content: space-around;
-     backdrop-filter: blur(12px);
-     border-radius: 25px;
-     /* background-color: rgb(23, 23, 23); */
-     /* background-color: #000b17 ; */
 }
 
-.pagination {
+/* -------------ITEM----------------- */
+.menu_items {
+     overflow: hidden;
+     border-top: solid 3px var(--hovercolor);
+     margin: 10px 15px 0;
+}
+
+.item {
+     width: var(--width - 15px);
+     padding: 10px 5px 0px;
+}
+
+.button_gamesAll {
+     background-color: transparent;
+     border-color: transparent;
+     color: white;
+     cursor: pointer;
      width: 100%;
-     background-color: black;
+     text-align: left;
+     border-radius: 10px;
+}
+
+.icon,
+.title {
+     font-size: 22px;
+     vertical-align: middle;
+     overflow: hidden;
+     display: inline-block;
+}
+
+.item a {
+     display: block;
+     border-radius: 10px;
+}
+
+.item .title {
+     padding: var(--padding) 0;
+}
+
+.title span {
+     font-family: 'Baloo 2', cursive;
+}
+
+.item a:hover,
+.button_gamesAll:hover {
+     background-color: var(--hovercolor);
+}
+
+.icon {
+     display: inline-block;
+     box-sizing: border-box;
+     padding: var(--padding);
+     width: var(--width-collapsed);
+}
+
+.icon img {
+     width: 100%;
 }
