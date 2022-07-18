@@ -48,6 +48,20 @@ export const getGameByName = (name) => {
      };
 };
 
+export const orderByAlphabetical = (payload) => {
+     return {
+          type: 'ORDER_BY_ALPHABETICAL',
+          payload,
+     };
+};
+
+export const orderByRating = (payload) => {
+     return {
+          type: 'ORDER_BY_RATING',
+          payload,
+     };
+};
+
 export const filterByOrigin = (payload) => {
      return {
           type: 'FILTER_BY_ORIGIN',
@@ -56,9 +70,21 @@ export const filterByOrigin = (payload) => {
      };
 };
 
-// export const filterByGenre = (payload) => {
-//      return async (dispatch) => {};
-// };
+export const filterByGenre = (payload) => {
+     return {
+          type: 'FILTER_BY_GENRE',
+          currentPage: 1,
+          payload,
+     };
+};
+
+export const filterByRating = (payload) => {
+     return {
+          type: 'FILTER_BY_RATING',
+          currentPage: 1,
+          payload,
+     };
+};
 
 export const setCurrentPage = (page) => {
      return {

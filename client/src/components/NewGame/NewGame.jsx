@@ -1,15 +1,15 @@
 import NavBar from '../NavBar/NavBar';
-import styles from './GameAdd.module.css';
+import styles from './NewGame.module.css';
 
-const GameAdd = () => {
+const NewGame = () => {
      return (
           <div className={styles.container}>
-               <NavBar />;
-               <div className={styles.container}>
+               <NavBar />
+               <div className={styles.container_form}>
                     <div className={styles.gamesArea}></div>
                </div>
           </div>
      );
 };
 
-export default GameAdd;
+export default NewGame;

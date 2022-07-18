@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
 :root {
-     --width: 275px;
-     --padding: 10px;
+     --width: 247.5px;
+     --padding: 9px;
      --hovercolor: rgba(0, 100, 146, 0.799);
      /* --hovercolor: #043f7f; */
-     --width-collapsed: 50px;
+     --width-collapsed: 45px;
 }
 
 .container {
      background: linear-gradient(-50deg, #052649 0%, #1f0557 40%, #28065a 60%, #5a0a65 100%);
      font-family: Arial, Helvetica, sans-serif;
-     font-size: 18px;
+     font-size: 16.2px;
      padding: 0;
      margin: 0;
      /* margin-left: var(--width-collapsed); */
@@ -39,7 +39,7 @@ Link {
 /* -----------PROFILE------------- */
 .profile {
      padding: var(--padding);
-     margin: 0 15px;
+     margin: 0 13.5px;
      text-align: center;
 }
 
@@ -57,13 +57,13 @@ Link {
 /* -------------ITEM----------------- */
 .menu_items {
      overflow: hidden;
-     border-top: solid 3px var(--hovercolor);
-     margin: 10px 15px 0;
+     border-top: solid 1.8px rgb(78, 0, 188);
+     margin: 9px 13.5px 0;
 }
 
 .item {
      width: var(--width - 15px);
-     padding: 10px 5px 0px;
+     padding: 9px 4.5px 0px;
 }
 
 .button_gamesAll {
@@ -78,7 +78,7 @@ Link {
 
 .icon,
 .title {
-     font-size: 22px;
+     font-size: 19.8px;
      vertical-align: middle;
      overflow: hidden;
      display: inline-block;
@@ -111,4 +111,36 @@ Link {
 
 .icon img {
      width: 100%;
+}
+
+/* ------------FILTERS-------------- */
+
+.item_filter_portada {
+     position: absolute;
+     width: var(--width - 13.5px);
+     padding: 0 4.5px 0;
+}
+
+.icon_sort {
+     display: inline-block;
+     box-sizing: border-box;
+     padding: var(--padding);
+     width: var(--width-collapsed);
+     font-size: 19.8px;
+     vertical-align: middle;
+     overflow: hidden;
+     display: inline-block;
+}
+
+.icon_sort img {
+     width: 93%;
+}
+
+.item_filter_one {
+     margin-top: 42px;
+     margin-bottom: 12.6px;
+}
+
+.item_filter {
+     margin-bottom: 12.6px;
 }

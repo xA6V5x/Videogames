@@ -12,7 +12,7 @@ const FilterOrigin = () => {
      }
      return (
           <div className={styles.container}>
-               <h5>Filtrar x origen</h5>
+               <h3>Origin</h3>
                <select
                     onChange={(e) => {
                          handleFilterByOrigin(e);
@@ -23,7 +23,7 @@ const FilterOrigin = () => {
                     </option>
                     <option value="created">My Games</option>
                     <option value="api">Api</option>
-               </select>{' '}
+               </select>
           </div>
      );
 };

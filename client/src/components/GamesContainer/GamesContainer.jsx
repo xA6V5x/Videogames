@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import GameCard from '../GameCard/GameCard';
 import Pagination from '../Pagination/Pagination';
-import { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { getVideogames, getGenres } from '../../redux/actions';
-import styles from './GamesContainer.module.css';
 import Spinner from '../Spinner/Spinner';
+import iconCreateGame from '../../assets/IconsNav/iconCreateGame.png';
+import styles from './GamesContainer.module.css';
 
 const GamesContainer = () => {
-     const dispatch = useDispatch();
      const allGames = useSelector((state) => state.allGames);
+     const gamesIsEmpty = useSelector((state) => state.gamesIsEmpty);
      const [currentPage, setCurrentPage] = useState(1);
      const [gamesPerPage] = useState(15);
      const indexOfLastGame = currentPage * gamesPerPage;
@@ -19,14 +20,28 @@ const GamesContainer = () => {
           setCurrentPage(pageNumber);
      };
 
-     useEffect(() => {
-          dispatch(getVideogames());
-          dispatch(getGenres());
-     }, [dispatch]);
-
      return (
           <div className={styles.container}>
-               {allGames.length > 0 ? (
+               {typeof allGames === 'string' ? (
+                    alert(allGames)
+               ) : typeof gamesIsEmpty === 'string' ? (
+                    <div className={styles.container}>
+                         <div className={styles.games_alert}>
+                              <h1>{gamesIsEmpty}</h1>
+                              <h2>Create games to see them here</h2>
+                              <Link to="/NewGame">
+                                   <div className={styles.games_alert_text}>
+                                        <div className={styles.icon}>
+                                             <img src={iconCreateGame} alt="icon" />
+                                        </div>
+                                        <div className={styles.title}>
+                                             <span>Create Game</span>
+                                        </div>
+                                   </div>
+                              </Link>
+                         </div>
+                    </div>
+               ) : allGames.length > 0 ? (
                     <div className={styles.container}>
                          <div className={styles.gamesArea}>
                               <Pagination

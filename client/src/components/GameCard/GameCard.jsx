@@ -37,7 +37,7 @@ const GameCard = ({ id, name, img, genres, rating }) => {
                          )}
                     </div>
                     <div className={styles.starsArea}>
-                         {arrayStars.map((cantidadStars) => (
+                         {arrayStars.map(() => (
                               <img src={Star} className={styles.star_img} alt="stars" />
                          ))}
                     </div>

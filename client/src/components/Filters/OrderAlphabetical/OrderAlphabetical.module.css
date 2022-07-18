@@ -3,15 +3,30 @@
      margin: 0;
 }
 
-.container h3 {
-     text-align: center;
-     font-family: 'Baloo 2', cursive;
+/* ---------------ITEM--------------- */
+
+.title {
+     display: inline-block;
+     width: 100%;
+     vertical-align: middle;
+     overflow: hidden;
      font-size: 17px;
-     font-weight: 1;
+     text-align: center;
+     margin-top: 42px;
 }
 
+.item .title {
+     padding: 9px 0;
+}
+
+.title span {
+     font-family: 'Baloo 2', cursive;
+}
+
+/* --------SELECT--------- */
+
 .container select {
-     margin: 0 0 0 10%;
+     margin: 0px 0 0 10%;
      width: 80%;
      height: 27px;
      border-radius: 15px 0 0 15px;

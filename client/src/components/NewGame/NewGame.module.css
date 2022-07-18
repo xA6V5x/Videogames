@@ -8,10 +8,10 @@
 
 /* ------------TODO------------ */
 
-.container_details {
+.container_form {
      display: flex;
      width: 80%;
-     height: auto;
+     height: 95vh;
      flex-wrap: wrap;
      justify-content: space-around;
      border-radius: 25px;

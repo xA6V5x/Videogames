@@ -15,7 +15,7 @@ const SearchBar = () => {
           } else {
                dispatch(getGameByName(gameState));
                setGameState('');
-               return alert('Looking for Games...');
+               return alert('Looking for Games, please wait...');
           }
      }
 

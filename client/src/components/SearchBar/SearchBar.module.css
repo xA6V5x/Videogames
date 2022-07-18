@@ -2,9 +2,12 @@
 
 .input_group {
      position: relative;
+     margin: 5px 0;
 }
 
 .input {
+     width: 100%;
+     height: 50px;
      border: solid 2px rgb(189, 189, 189);
      /* border: solid 2px rgba(0, 100, 146, 0.799); */
      font-family: 'Baloo 2', cursive;
@@ -19,7 +22,8 @@
 .user_label {
      position: absolute;
      background-color: #28065a;
-     left: 15px;
+     top: -3px;
+     left: 13.5px;
      color: rgba(255, 255, 255);
      font-family: 'Baloo 2', cursive;
      /* color: rgba(0, 100, 146, 0.799); */
@@ -35,7 +39,7 @@
 }
 
 .input:focus ~ label {
-     transform: translateY(-50%) scale(0.8);
+     transform: translateY(-40%) scale(0.8);
      background-color: #28065a;
      padding: 0 0.2em;
      color: rgba(0, 100, 146, 0.799);
@@ -45,7 +49,7 @@
      background: transparent;
      border: none;
      position: absolute;
-     right: 20px;
-     top: 18px;
+     right: 18px;
+     top: 12px;
      cursor: pointer;
 }

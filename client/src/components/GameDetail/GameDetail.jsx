@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { /*deleteDetails*/ getDetails } from '../../redux/actions/index';
+import { getDetails } from '../../redux/actions/index';
 import NavBar from '../NavBar/NavBar';
 import Spinner from '../Spinner/Spinner';
 import styles from './GameDetail.module.css';
@@ -16,7 +16,7 @@ const GameDetail = () => {
 
      useEffect(() => {
           dispatch(getDetails(idGame));
-     }, []);
+     }, [dispatch]);
 
      return (
           <div className={styles.container}>
