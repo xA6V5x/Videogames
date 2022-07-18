@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
                const nameGame = await allGames.filter((game) =>
                     game.name.toLowerCase().includes(name.toLowerCase())
                );
-               nameGame.length ? res.send(nameGame) : res.send("The Game don't exist");
+               nameGame.length ? res.send(nameGame) : res.json(`The Game "${name}" does not exist`);
           } else {
                res.json(allGames);
           }

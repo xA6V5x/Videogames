@@ -10,15 +10,11 @@
 
 .container_details {
      display: flex;
-     width: 80%;
-     height: auto;
+     margin: 20px 60px 0 300px;
      flex-wrap: wrap;
      justify-content: space-around;
-     border-radius: 25px;
-     margin-left: 300px;
-     margin-top: 20px;
      background: linear-gradient(130deg, #052649 0%, #1f0557 40%, #37063d 90%, #37063d 100%);
-     /* background-color: #052649; */
+     border-radius: 25px;
 }
 
 .title {
@@ -29,36 +25,32 @@
      color: rgba(255, 255, 255);
 }
 
-/* ---------IMAGEN---------- */
+/* ---------IMAGEN DETAILS---------- */
 
 .details_portada {
      display: flex;
      margin: auto;
-     height: 400px;
      width: 70%;
 }
 
 .details_portada_img img {
      width: 700px;
      height: 400px;
+     /* width: 98%;
+     height: 100%; */
      background-repeat: no-repeat;
      background-position: 50%;
      border-radius: 15px;
      background-size: 100% auto;
 }
 
-/* ---------DETALLES----------- */
-
 .details_all {
      /* display: flex; */
      /* flex-wrap: wrap; */
      /* justify-content: space-around; */
-     backdrop-filter: blur(12px);
-     border-radius: 25px;
      margin: auto;
      margin-top: 10px;
-     /* background-color: rgb(23, 23, 23); */
-     /* background-color: #000b17 ; */
+     border-radius: 25px;
 }
 
 .details_all_text h3 {
@@ -96,8 +88,55 @@
      font-family: 'Baloo 2', cursive;
 }
 
-/* ------------------------------------- */
+/* ------------------RESPONSIVE------------------ */
 
-.none {
-     display: none;
+@media (max-width: 1430px) {
+     .title {
+          font-size: 5vw;
+     }
+
+     .details_portada {
+          display: block;
+          width: 90%;
+          margin: auto;
+     }
+
+     .details_portada_img img {
+          width: 100%;
+          height: auto;
+     }
+
+     .details_all {
+          display: flex;
+          text-align: center;
+     }
+
+     .details_description {
+          width: 90%;
+          margin: 0 0 4%;
+     }
+
+     .details_description h2 {
+          font-size: 25px;
+          padding: 0;
+     }
+}
+
+@media (max-width: 1100px) {
+     .container_details {
+          margin: 10px;
+     }
+}
+
+@media (max-width: 700px) {
+     .details_all {
+          display: block;
+          text-align: left;
+     }
+     .details_all_text {
+          color: #ffffff;
+          margin: 20px;
+          padding-right: 10px;
+          width: 100%;
+     }
 }

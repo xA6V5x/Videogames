@@ -22,9 +22,7 @@ const GamesContainer = () => {
 
      return (
           <div className={styles.container}>
-               {typeof allGames === 'string' ? (
-                    alert(allGames)
-               ) : typeof gamesIsEmpty === 'string' ? (
+               {typeof gamesIsEmpty === 'string' ? (
                     <div className={styles.container}>
                          <div className={styles.games_alert}>
                               <h1>{gamesIsEmpty}</h1>
@@ -44,13 +42,14 @@ const GamesContainer = () => {
                ) : allGames.length > 0 ? (
                     <div className={styles.container}>
                          <div className={styles.gamesArea}>
-                              <Pagination
-                                   gamesPerPage={gamesPerPage}
-                                   allGames={allGames.length}
-                                   pagination={pagination}
-                                   currentPage={currentPage}
-                              />
-                              <div className={styles.pagination}></div>
+                              <div className={styles.pagination}>
+                                   <Pagination
+                                        gamesPerPage={gamesPerPage}
+                                        allGames={allGames.length}
+                                        pagination={pagination}
+                                        currentPage={currentPage}
+                                   />
+                              </div>
                               {currentGames.map((data) => {
                                    return (
                                         <GameCard
@@ -63,6 +62,20 @@ const GamesContainer = () => {
                                         />
                                    );
                               })}
+                              <div
+                                   className={
+                                        allGames.length > 15
+                                             ? styles.pagination_responsive
+                                             : styles.pagination_none
+                                   }
+                              >
+                                   <Pagination
+                                        gamesPerPage={gamesPerPage}
+                                        allGames={allGames.length}
+                                        pagination={pagination}
+                                        currentPage={currentPage}
+                                   />
+                              </div>
                          </div>
                     </div>
                ) : (

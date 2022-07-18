@@ -1,11 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import GameOver from '../../assets/SliderLanding/GameOver.jpg';
 import iconHome from '../../assets/IconsNav/iconHome.png';
 import iconAddGame from '../../assets/IconsNav/iconAddGame.png';
 import styles from './NavBar.module.css';
 
 const NavBar = () => {
+     const navigate = useNavigate();
+
+     function resetForm() {
+          navigate('/NewGame');
+          window.location.href = window.location.href;
+     }
+
      return (
           <div className={styles.container}>
                <div className={styles.sidemenu && styles.menu_collapsed}>
@@ -28,7 +35,7 @@ const NavBar = () => {
                                    </div>
                               </Link>
                          </div>
-                         <div className={styles.item}>
+                         <div className={styles.item} onClick={() => resetForm()}>
                               <Link to="/NewGame">
                                    <div className={styles.icon}>
                                         <img src={iconAddGame} alt="icon" />

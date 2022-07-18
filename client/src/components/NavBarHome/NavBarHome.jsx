@@ -57,7 +57,7 @@ const NavBar = () => {
                          <div className={styles.item}>
                               <button
                                    className={styles.button_gamesAll}
-                                   onClick={(e) => handleClick(e)}
+                                   onClick={() => handleClick()}
                               >
                                    <div className={styles.icon}>
                                         <img src={iconAllGames} alt="icon" />

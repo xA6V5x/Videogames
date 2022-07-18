@@ -144,3 +144,21 @@ Link {
 .item_filter {
      margin-bottom: 12.6px;
 }
+
+/* -----------------RESPONSIVE------------- */
+
+@media (max-width: 910px) {
+     .container {
+          font-size: 16.2px;
+          width: 100%;
+          position: relative;
+     }
+
+     .profile {
+          display: none;
+     }
+
+     .menu_items {
+          margin-top: 0;
+     }
+}

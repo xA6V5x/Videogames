@@ -86,6 +86,14 @@ export const filterByRating = (payload) => {
      };
 };
 
+export const postGame = (payload) => {
+     return async () => {
+          // const response = await axios.post('http://localhost:3001/videogames', payload);
+          // return response;
+          return await axios.post('http://localhost:3001/videogames', payload);
+     };
+};
+
 export const setCurrentPage = (page) => {
      return {
           type: 'SET_PAGE',

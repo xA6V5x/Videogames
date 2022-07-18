@@ -7,9 +7,16 @@ body {
      padding: 0;
 }
 
+.pagination_none {
+     display: none;
+}
+
 .pagination {
      width: 100%;
-     background-color: black;
+}
+
+.pagination_responsive {
+     width: 100%;
 }
 
 .gamesArea {
@@ -88,4 +95,21 @@ body {
      font-family: 'Baloo 2', cursive;
      line-height: 40px;
      font-size: 35px;
+}
+
+/* ---------------RESPONSIVE--------------- */
+
+@media (max-width: 910px) {
+     .gamesArea {
+          display: flex;
+          margin-left: 0;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          backdrop-filter: blur(12px);
+          border-radius: 25px;
+     }
+
+     .games_alert {
+          margin: 0;
+     }
 }

@@ -9,95 +9,33 @@
 /* ------------TODO------------ */
 
 .container_form {
-     display: flex;
-     width: 80%;
+     /* display: flex; */
      height: 95vh;
      flex-wrap: wrap;
      justify-content: space-around;
      border-radius: 25px;
-     margin-left: 300px;
-     margin-top: 20px;
+     margin: 20px 60px 0 300px;
      background: linear-gradient(130deg, #052649 0%, #1f0557 40%, #37063d 90%, #37063d 100%);
      /* background-color: #052649; */
 }
 
-.title {
-     font-family: 'B612', sans-serif;
-     font-size: 90px;
-     width: 100%;
+.container_form h1 {
+     color: white;
      text-align: center;
-     color: rgba(255, 255, 255);
 }
 
 /* ---------IMAGEN---------- */
 
-.details_portada {
-     display: flex;
-     margin: auto;
-     height: 400px;
-     width: 70%;
-}
-
-.details_portada_img img {
-     width: 700px;
-     height: 400px;
-     background-repeat: no-repeat;
-     background-position: 50%;
-     border-radius: 15px;
-     background-size: 100% auto;
-}
-
 /* ---------DETALLES----------- */
-
-.details_all {
-     /* display: flex; */
-     /* flex-wrap: wrap; */
-     /* justify-content: space-around; */
-     backdrop-filter: blur(12px);
-     border-radius: 25px;
-     margin: auto;
-     margin-top: 10px;
-     /* background-color: rgb(23, 23, 23); */
-     /* background-color: #000b17 ; */
-}
-
-.details_all_text h3 {
-     color: #ffffff;
-}
-
-.details_all_text h4 {
-     color: rgb(17, 171, 194);
-}
-
-.details_all_text {
-     color: #ffffff;
-     margin: 20px;
-     width: 200px;
-}
 
 /* ---------ABOUT AND DESCRIPTION----------- */
 
-.details_description {
-     width: 70%;
-     margin: 10px 0 20px;
-     /* margin: 10px 180px 20px 200px; */
-}
+/* ---------------RESPONSIVE------------------ */
 
-.details_description h2 {
-     font-size: 25px; /* 24px de base en h2 */
-     margin: 10px 0;
-     color: rgb(17, 171, 194);
-}
-
-.details_description_text {
-     color: #ffffff;
-     font-size: 21px;
-     font-weight: 1;
-     font-family: 'Baloo 2', cursive;
-}
-
-/* ------------------------------------- */
-
-.none {
-     display: none;
+@media (max-width: 1100px) {
+     .container_form {
+          width: 97%;
+          margin: auto;
+          margin-top: 10px;
+     }
 }

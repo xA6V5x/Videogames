@@ -1,9 +1,9 @@
 const initialState = {
-     gamesAfter: [],
-     gamesBefore: [],
-     gamesIsEmpty: [],
-     gamesInRating: [],
      allGames: [],
+     gamesBefore: [],
+     gamesAfter: [],
+     gamesInRating: [],
+     gamesIsEmpty: [],
      genres: [],
      details: [],
      currentPage: 1,
@@ -50,9 +50,18 @@ function rootReducer(state = initialState, action) {
                };
 
           case 'GET_BY_NAME':
+               if (payload.length > 0)
+                    return {
+                         ...state,
+                         gamesBefore: payload,
+                         gamesAfter: payload,
+                         gamesInRating: payload,
+                         gamesIsEmpty: payload,
+                         allGames: payload,
+                    };
                return {
                     ...state,
-                    allGames: payload,
+                    gamesIsEmpty: payload,
                };
 
           case 'ORDER_BY_ALPHABETICAL':
@@ -207,7 +216,7 @@ function rootReducer(state = initialState, action) {
                     gamesIsEmpty: 'There are no games whit this Genre',
                };
 
-          case 'FILTER_BY_RATING': {
+          case 'FILTER_BY_RATING':
                let gamesRating = state.gamesInRating.filter((data) => data.rating == payload);
                if (payload === 'all') {
                     return {
@@ -226,7 +235,6 @@ function rootReducer(state = initialState, action) {
                     ...state,
                     gamesIsEmpty: 'There are no games whit this Rating',
                };
-          }
 
           case 'SET_PAGE':
                return {

@@ -8,8 +8,15 @@ const SearchBar = () => {
      const [gameState, setGameState] = useState('');
      const dispatch = useDispatch();
 
-     function handleClick(e) {
+     function handleKeyDown(e) {
+          if (e.key === 'Enter') {
+               handleSubmit(e);
+          }
+     }
+
+     function handleSubmit(e) {
           e.preventDefault();
+
           if (gameState.length === 0) {
                return alert('Please include a name');
           } else {
@@ -28,9 +35,14 @@ const SearchBar = () => {
                     autoComplete="off"
                     className={styles.input}
                     onChange={(e) => setGameState(e.target.value)}
+                    onKeyDown={(e) => handleKeyDown(e)}
                />
                <label className={styles.user_label}>Search Game</label>
-               <button className={styles.searchButton} type="submit" onClick={handleClick}>
+               <button
+                    className={styles.searchButton}
+                    type="submit"
+                    onClick={(e) => handleSubmit(e)}
+               >
                     <svg width="25" height="25" x="0" y="0" viewBox="0 0 24 24">
                          <g>
                               <path
