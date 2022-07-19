@@ -34,9 +34,16 @@ const GameDetail = () => {
                                         <div className={styles.details_all_text}>
                                              <h4>Platforms</h4>
                                              <h3>
-                                                  {platforms
-                                                       .map((platforms) => `${platforms.name} `)
-                                                       .join(', ')}
+                                                  {platforms.length > 1
+                                                       ? platforms[0].name
+                                                            ? platforms
+                                                                   .map(
+                                                                        (platforms) =>
+                                                                             `${platforms.name} `
+                                                                   )
+                                                                   .join(', ')
+                                                            : platforms
+                                                       : platforms}
                                              </h3>
                                         </div>
 

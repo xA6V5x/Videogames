@@ -99,6 +99,21 @@ body {
 
 /* ---------------RESPONSIVE--------------- */
 
+@media (max-height: 895px) {
+     .gamesArea {
+          display: flex;
+          margin-left: 0;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          backdrop-filter: blur(12px);
+          border-radius: 25px;
+     }
+
+     .games_alert {
+          margin: 0;
+     }
+}
+
 @media (max-width: 910px) {
      .gamesArea {
           display: flex;

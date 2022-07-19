@@ -20,7 +20,7 @@ const FilterGenre = () => {
                     <option value="all">All</option>
                     {genres.map((genre) => {
                          return (
-                              <option value={genre.className} key={genre.id}>
+                              <option value={genre.name} key={genre.id}>
                                    {genre.name}
                               </option>
                          );

@@ -53,3 +53,21 @@
      top: 12px;
      cursor: pointer;
 }
+
+@media (max-height: 896px) {
+     .user_label {
+          background-color: rgb(63, 8, 95);
+     }
+     .input:focus ~ label {
+          background-color: rgb(62, 7, 95);
+     }
+}
+
+@media (max-width: 910px) {
+     .user_label {
+          background-color: rgb(63, 8, 95);
+     }
+     .input:focus ~ label {
+          background-color: rgb(62, 7, 95);
+     }
+}

@@ -60,11 +60,15 @@ body {
 .logos_responsive {
      display: none;
      margin: auto;
-     margin-left: 25%;
 }
 
 .logos_responsive .logo {
+     margin-top: 30px;
      width: 68px;
+}
+
+.logos_responsive .logo img {
+     margin-left: 13.6px;
 }
 
 /* Info -------------------------------------------- */
@@ -135,21 +139,6 @@ body {
      margin-top: 80px;
      cursor: pointer;
 }
-
-/* .home_info .link_button {
-  width: 250px;
-  height: 60px;
-  background-color: rgba(6, 0, 123, 0.439);
-  border-color: transparent;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.link_button:hover {
-  background-color:rgba(139, 0, 148, 0.439); 
-}
-*/
 
 .enter {
      font-family: 'Roboto', sans-serif;
@@ -331,16 +320,61 @@ body {
 }
 
 @media (max-width: 1000px) {
+     .container {
+          position: relative;
+          display: flex;
+          width: 100%;
+          height: 100vh;
+     }
+
      .slider_frame {
           display: none;
      }
 
      .home_info {
-          width: 100vw;
-          height: 100vh;
-          position: absolute;
+          width: 100%;
+          height: auto;
+          position: relative;
           display: flex;
-          height: 100%;
+     }
+
+     .home_info .img_gameover {
+          width: 300px;
+     }
+
+     .logos_responsive {
+          margin: auto;
+          margin-bottom: 50px;
+     }
+}
+
+@media (max-height: 895px) {
+     .container {
+          margin: 0;
+          position: relative;
+          display: flex;
+          width: 100%;
+          height: auto;
+     }
+
+     .logos_pc {
+          display: none;
+     }
+
+     .logos_responsive {
+          display: flex;
+     }
+
+     .slider_frame {
+          display: none;
+     }
+
+     .home_info {
+          margin: 0;
+          width: 100%;
+          height: auto;
+          position: relative;
+          display: flex;
      }
 
      .home_info .img_gameover {
