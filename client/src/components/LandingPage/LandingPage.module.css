@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap'); */
 
 * {
      margin: 0;
@@ -31,11 +31,11 @@ body {
      display: flex;
      width: 100vw;
      height: 100vh;
-} */
+}
 
 /* Logos ------------------------------------------ */
 
-/* .logos_pc {
+.logos_pc {
      display: flex;
      flex-direction: row;
      position: absolute;
@@ -53,11 +53,11 @@ body {
      width: 30px;
      height: 50px;
      padding: 20px 42px 0px;
-} */
+}
 
 /* Logos Responsive ------------------------------ */
 
-/* .logos_responsive {
+.logos_responsive {
      display: none;
      margin: auto;
 }
@@ -69,11 +69,11 @@ body {
 
 .logos_responsive .logo img {
      margin-left: 13.6px;
-} */
+}
 
 /* Info -------------------------------------------- */
 
-/* .home_info {
+.home_info {
      position: absolute;
      display: flex;
      flex-direction: column;
@@ -85,11 +85,11 @@ body {
      z-index: 2;
      backdrop-filter: blur(15px);
      background: rgba(6, 19, 52, 0.34);
-} */
+}
 
 /* Fonts ------------------------------------- */
 
-/* .home_info h1 {
+.home_info h1 {
      margin-top: 50px;
      font-family: 'Audiowide', cursive;
      font-size: 60px;
@@ -214,11 +214,11 @@ body {
 
 .link_button i:hover {
      background-color: rgba(139, 0, 148, 0.439);
-} */
+}
 
 /* Slider -------------------------------------------------- */
 
-/* .slider_frame {
+.slider_frame {
      position: absolute;
      width: 69%;
      height: auto;
@@ -277,21 +277,11 @@ body {
      100% {
           margin-left: -300%;
      }
-} */
-
-/* DOTS -------------------------------------- */
-
-/* .dots {
-     width: 160px;
-     height: auto;
-     margin-top: 55px;
-     margin-left: 60px;
-     z-index: 5;
-} */
+}
 
 /*--------RESPONSIVE--------  */
 
-/* @media (max-width: 1422px) {
+@media (max-width: 1422px) {
      .logos_pc {
           display: none;
      }
@@ -366,4 +356,4 @@ body {
      .logos_responsive {
           margin: auto;
      }
-} */
+}
