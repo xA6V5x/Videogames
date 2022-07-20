@@ -8,6 +8,14 @@ export const getVideogames = () => {
                payload: json.data,
           });
      };
+     // return (dispatch) => {
+     //      return axios.get('http://localhost:3001/videogames').then((json) => {
+     //           return dispatch({
+     //                type: 'GET_VIDEOGAMES',
+     //                payload: json.data,
+     //           });
+     //      });
+     // };
 };
 
 export const getGenres = () => {

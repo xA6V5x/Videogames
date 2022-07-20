@@ -19,7 +19,7 @@ const GameCard = ({ id, name, img, genres, rating }) => {
      })();
 
      return (
-          <Link to={'/videogame/' + id}>
+          <Link className={styles.container} to={'/videogame/' + id}>
                <div className={styles.gameCard}>
                     <img className={styles.gameImage} src={img} alt={name} />
                     <div className={styles.titleArea}>
