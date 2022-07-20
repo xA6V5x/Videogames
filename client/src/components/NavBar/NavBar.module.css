@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap'); */
 
 :root {
      --width: 247.5px;
      --padding: 9px;
      --hovercolor: rgba(0, 100, 146, 0.799);
-     /* --hovercolor: #043f7f; */
      --width-collapsed: 45px;
 }
 
@@ -14,7 +13,6 @@
      font-size: 16.2px;
      padding: 0;
      margin: 0;
-     /* margin-left: var(--width-collapsed); */
      width: var(--width);
      height: 100%;
      color: white;
