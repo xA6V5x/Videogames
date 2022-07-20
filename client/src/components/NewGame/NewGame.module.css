@@ -258,7 +258,7 @@
           cursor: text;
      }
 
-     .form_section textarea {
-          width: 80%;
+     .form_section_description textarea {
+          width: 90%;
      }
 }

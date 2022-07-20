@@ -23,22 +23,30 @@ const GamesContainer = () => {
      return (
           <div className={styles.container}>
                {typeof gamesIsEmpty === 'string' ? (
-                    <div className={styles.container}>
-                         <div className={styles.games_alert}>
-                              <h1>{gamesIsEmpty}</h1>
-                              <h2>Create games to see them here</h2>
-                              <Link to="/NewGame">
-                                   <div className={styles.games_alert_text}>
-                                        <div className={styles.icon}>
-                                             <img src={iconCreateGame} alt="icon" />
-                                        </div>
-                                        <div className={styles.title}>
-                                             <span>Create Game</span>
-                                        </div>
-                                   </div>
-                              </Link>
+                    gamesIsEmpty == 'There are no games in the api with those characteristics' ? (
+                         <div className={styles.container}>
+                              <div className={styles.games_alert}>
+                                   <h1>{gamesIsEmpty}</h1>
+                              </div>
                          </div>
-                    </div>
+                    ) : (
+                         <div className={styles.container}>
+                              <div className={styles.games_alert}>
+                                   <h1>{gamesIsEmpty}</h1>
+                                   <h2>Create games to see them here</h2>
+                                   <Link to="/NewGame">
+                                        <div className={styles.games_alert_text}>
+                                             <div className={styles.icon}>
+                                                  <img src={iconCreateGame} alt="icon" />
+                                             </div>
+                                             <div className={styles.title}>
+                                                  <span>Create Game</span>
+                                             </div>
+                                        </div>
+                                   </Link>
+                              </div>
+                         </div>
+                    )
                ) : allGames.length > 0 ? (
                     <div className={styles.container}>
                          <div className={styles.gamesArea}>
