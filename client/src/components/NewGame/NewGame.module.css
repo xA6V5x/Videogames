@@ -259,4 +259,20 @@
      .form_section_description textarea {
           width: 90%;
      }
+
+     .section_delete_container {
+          display: block;
+          margin: auto;
+          width: 100%;
+          color: white;
+     }
+
+     .section_delete {
+          display: flex;
+          margin: -10px auto 30px;
+          padding: 10px;
+          width: 200px;
+          border-radius: 25px;
+          background-color: rgba(0, 100, 146, 0.799);
+     }
 }
