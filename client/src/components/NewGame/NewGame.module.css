@@ -1,14 +1,14 @@
-/* @import url('https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
 .container {
      margin: auto;
      padding: 0;
-} */
+}
 
 /* ------------TODO------------ */
 
-/* .container_form_all {
+.container_form_all {
      display: flex;
      margin: 20px 60px 20px 300px;
      flex-wrap: wrap;
@@ -66,11 +66,11 @@
 
 .none {
      display: none;
-} */
+}
 
 /* ---------IMAGEN---------- */
 
-/* .form_section_img {
+.form_section_img {
      display: flex;
      margin: auto;
      margin-top: 20px;
@@ -85,11 +85,11 @@
      background-position: 50%;
      border-radius: 15px;
      background-size: 100% auto;
-} */
+}
 
 /* ---------SELECTS----------- */
 
-/* .container select {
+.container select {
      display: flex;
      margin: auto;
      width: 400px;
@@ -105,10 +105,10 @@
 .container select option {
      font-family: 'Baloo 2', cursive;
      cursor: pointer;
-} */
+}
 
 /* --------------ERRORS----------------- */
-/* .errors_container,
+.errors_container,
 .errors_description_container {
      text-align: center;
 }
@@ -124,10 +124,10 @@
 
 .errors_description_container p {
      margin: 10px auto 40px;
-} */
+}
 
 /* -------------DELETE------------------ */
-/* .section_delete_container {
+.section_delete_container {
      display: flex;
      width: 100%;
      padding-left: 5%;
@@ -160,11 +160,11 @@
      padding-left: 10px;
      padding-top: 2px;
      cursor: default;
-} */
+}
 
 /* ----------BUTTON SUBMIT-------------- */
 
-/* .games_alert_text {
+.games_alert_text {
      display: flex;
      width: 250px;
      height: 70px;
@@ -200,11 +200,11 @@
      font-family: 'Baloo 2', cursive;
      line-height: 40px;
      font-size: 30px;
-} */
+}
 
 /* ---------------RESPONSIVE------------------ */
 
-/* @media (max-width: 1100px) {
+@media (max-width: 1100px) {
      .container {
           margin: 0;
           padding: 0;
@@ -259,4 +259,4 @@
      .form_section_description textarea {
           width: 90%;
      }
-} */
+}

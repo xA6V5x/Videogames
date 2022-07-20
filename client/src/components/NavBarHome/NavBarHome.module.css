@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
-
 :root {
      --width: 247.5px;
      --padding: 9px;
@@ -32,10 +30,10 @@
 Link {
      color: white;
      text-decoration: none;
-} */
+}
 
 /* -----------PROFILE------------- */
-/* .profile {
+.profile {
      padding: var(--padding);
      margin: 0 13.5px;
      text-align: center;
@@ -50,10 +48,10 @@ Link {
 .photo img {
      border-radius: 50%;
      width: 80%;
-} */
+}
 
 /* -------------ITEM----------------- */
-/* .menu_items {
+.menu_items {
      overflow: hidden;
      border-top: solid 1.8px rgb(78, 0, 188);
      margin: 9px 13.5px 0;
@@ -109,11 +107,11 @@ Link {
 
 .icon img {
      width: 100%;
-} */
+}
 
 /* ------------FILTERS-------------- */
 
-/* .item_filter_portada {
+.item_filter_portada {
      position: absolute;
      width: var(--width - 13.5px);
      padding: 0 4.5px 0;
@@ -141,7 +139,7 @@ Link {
 
 .item_filter {
      margin-bottom: 12.6px;
-} */
+}
 
 /* -----------------RESPONSIVE------------- */
 

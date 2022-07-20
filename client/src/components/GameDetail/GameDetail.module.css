@@ -1,14 +1,11 @@
-/* @import url('https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
-
 .container {
      margin: 0;
      padding: 0;
-} */
+}
 
 /* ------------TODO------------ */
 
-/* .container_details {
+.container_details {
      display: flex;
      margin: 20px 60px 20px 300px;
      flex-wrap: wrap;
@@ -24,11 +21,11 @@
      width: 100%;
      text-align: center;
      color: rgba(255, 255, 255);
-} */
+}
 
 /* ---------IMAGEN DETAILS---------- */
 
-/* .details_portada {
+.details_portada {
      display: flex;
      margin: auto;
      width: 70%;
@@ -61,18 +58,17 @@
      color: #ffffff;
      margin: 20px;
      width: 200px;
-} */
+}
 
 /* ---------ABOUT AND DESCRIPTION----------- */
 
-/* .details_description {
+.details_description {
      width: 70%;
      margin: 10px 0 20px;
-
 }
 
 .details_description h2 {
-     font-size: 25px; 
+     font-size: 25px;
      margin: 10px 0;
      color: rgb(17, 171, 194);
 }
@@ -82,11 +78,11 @@
      font-size: 21px;
      font-weight: 1;
      font-family: 'Baloo 2', cursive;
-} */
+}
 
 /* ------------------RESPONSIVE------------------ */
 
-/* @media (max-width: 1430px) {
+@media (max-width: 1430px) {
      .title {
           margin: 10px 15px;
      }
@@ -139,4 +135,4 @@
           padding-right: 10px;
           width: 100%;
      }
-} */
+}

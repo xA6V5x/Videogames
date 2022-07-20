@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
 .input_group {
      position: relative;
@@ -67,4 +67,4 @@
      .input:focus ~ label {
           background-color: rgb(62, 7, 95);
      }
-} */
+}
