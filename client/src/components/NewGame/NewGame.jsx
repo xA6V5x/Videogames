@@ -8,15 +8,57 @@ import NavBar from '../NavBar/NavBar';
 import iconCreateGame from '../../assets/IconsNav/iconCreateGame.png';
 import styles from './NewGame.module.css';
 
+function validateFomr(input) {
+     let errors = {};
+
+     if (!input.name) {
+          errors.name = '☢ You must write a name 	☢';
+     } else {
+          errors.name = '';
+     }
+
+     if (input.platforms.length === 0) {
+          errors.platforms = '☢ You must add at least one platform ☢';
+     } else {
+          errors.platforms = '';
+     }
+
+     if (input.genres.length === 0) {
+          errors.genres = '☢ You must add at least one genre ☢';
+     } else {
+          errors.genres = '';
+     }
+
+     if (!input.released) {
+          errors.released = '☢ You must select a date ☢';
+     } else {
+          errors.released = '';
+     }
+
+     if (!input.rating) {
+          errors.rating = '☢ You must select a rating ☢';
+     } else {
+          errors.rating = '';
+     }
+
+     if (!input.description) {
+          errors.description = '☢ You should write a short description ☢';
+     } else {
+          errors.description = '';
+     }
+     return errors;
+}
+
 const NewGame = () => {
      const dispatch = useDispatch();
      const navigate = useNavigate();
 
-     const genres = useSelector((state) => state.genres);
-
      useEffect(() => {
           dispatch(getGenres());
      }, [dispatch]);
+
+     const genres = useSelector((state) => state.genres);
+     const [errors, setErrors] = useState({});
 
      const platforms = [
           'Linux',
@@ -43,14 +85,27 @@ const NewGame = () => {
           description: '',
      });
 
-     // para todos los inputs
+     // Para todos los inputs
      function handleChange(e) {
           setInput({
                ...input,
                [e.target.name]: e.target.value,
           });
+          setErrors(
+               validateFomr({
+                    ...input,
+                    [e.target.name]: e.target.value,
+               })
+          );
      }
+
      //borrar manualmente las plataformas o generos no requeridos
+     // function handleDelete(e) {
+     //      setInput({
+     //           [e.target.name]: input[e.target.name].filter((data) => data !== e),
+     //      });
+     // }
+
      function handleDeletePlatform(e) {
           setInput({
                ...input,
@@ -65,8 +120,8 @@ const NewGame = () => {
           });
      }
 
-     // para los select(platforms y genres)
-     function handeSelect(e) {
+     //Para los select(platforms y genres)
+     function handleSelect(e) {
           let rev = input[e.target.name].filter((data) => data === e.target.value);
 
           rev.length > 0
@@ -79,24 +134,45 @@ const NewGame = () => {
                       ...input,
                       [e.target.name]: [...input[e.target.name], e.target.value],
                  });
+          setErrors(
+               validateFomr({
+                    ...input,
+                    [e.target.name]: e.target.value,
+               })
+          );
      }
 
+     // Para enviar la informacion
      function handleSubmit(e) {
           e.preventDefault();
-          alert('Game Created Successfully');
-          dispatch(postGame(input));
-          setInput({
-               name: '',
-               img: '',
-               platforms: [],
-               genres: [],
-               released: '',
-               rating: '',
-               description: '',
-          });
-          navigate('/Home');
+          if (
+               input.name &&
+               !errors.name &&
+               !errors.platforms &&
+               !errors.genres &&
+               !errors.released &&
+               !errors.rating &&
+               !errors.description
+          ) {
+               alert('Game Created Successfully');
+               dispatch(postGame(input));
+               setInput({
+                    name: '',
+                    img: '',
+                    platforms: [],
+                    genres: [],
+                    released: '',
+                    rating: '',
+                    description: '',
+               });
+               navigate('/Home');
+          } else {
+               setErrors(validateFomr(input));
+               alert('Please cheack the errors');
+          }
      }
      console.log(input);
+     console.log(errors);
 
      return (
           <div className={styles.container}>
@@ -116,6 +192,9 @@ const NewGame = () => {
                                         placeholder="Game Name. . ."
                                         onChange={(e) => handleChange(e)}
                                    />
+                                   <div className={styles.errors_container}>
+                                        <p>{errors.name}</p>
+                                   </div>
                               </div>
                               {/* ------------IMAGEN---------- */}
                               <div className={styles.form_container_section_img}>
@@ -144,7 +223,7 @@ const NewGame = () => {
                                    <div className={styles.platforms_section}>
                                         <label>Platforms:</label>
                                         <br />
-                                        <select name="platforms" onChange={(e) => handeSelect(e)}>
+                                        <select name="platforms" onChange={(e) => handleSelect(e)}>
                                              {platforms.map((platform) => {
                                                   return (
                                                        <option
@@ -157,6 +236,9 @@ const NewGame = () => {
                                                   );
                                              })}
                                         </select>
+                                   </div>
+                                   <div className={styles.errors_container}>
+                                        <p>{errors.platforms}</p>
                                    </div>
                               </div>
                               <div className={styles.section_delete_container}>
@@ -174,7 +256,7 @@ const NewGame = () => {
                                    <div className={styles.platforms_section}>
                                         <label>Genres:</label>
                                         <br />
-                                        <select name="genres" onChange={(e) => handeSelect(e)}>
+                                        <select name="genres" onChange={(e) => handleSelect(e)}>
                                              {genres.map((genre) => {
                                                   return (
                                                        <option
@@ -187,6 +269,9 @@ const NewGame = () => {
                                                   );
                                              })}
                                         </select>
+                                   </div>
+                                   <div className={styles.errors_container}>
+                                        <p>{errors.genres}</p>
                                    </div>
                               </div>
                               <div className={styles.section_delete_container}>
@@ -208,6 +293,9 @@ const NewGame = () => {
                                         name="released"
                                         onChange={(e) => handleChange(e)}
                                    />
+                                   <div className={styles.errors_container}>
+                                        <p>{errors.released}</p>
+                                   </div>
                               </div>
                               {/* -----------RANTING-------------- */}
                               <div className={styles.form_section}>
@@ -220,9 +308,12 @@ const NewGame = () => {
                                         <option value={4}>4</option>
                                         <option value={5}>5</option>
                                    </select>
+                                   <div className={styles.errors_container}>
+                                        <p>{errors.rating}</p>
+                                   </div>
                               </div>
                               {/* -----------DESCRIPTION------------ */}
-                              <div className={styles.form_section}>
+                              <div className={styles.form_section_description}>
                                    <label>Description:</label>
                                    <br />
                                    <textarea
@@ -235,6 +326,9 @@ const NewGame = () => {
                                         placeholder="Description. . ."
                                         onChange={(e) => handleChange(e)}
                                    />
+                                   <div className={styles.errors_description_container}>
+                                        <p>{errors.description}</p>
+                                   </div>
                               </div>
                               {/* -----------BUTTON SUBMIT------------ */}
                               <button

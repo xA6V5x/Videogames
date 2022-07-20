@@ -42,11 +42,12 @@
 }
 
 .form_section {
-     height: 80px;
+     height: 100px;
 }
 
 .form_section input,
-.form_container_section_img input {
+.form_container_section_img input,
+.form_section_description textarea {
      display: flex;
      margin: auto;
      width: 400px;
@@ -59,15 +60,8 @@
      background-color: rgb(250, 250, 250);
 }
 
-.form_section textarea {
-     display: flex;
-     margin: auto;
-     border-radius: 15px;
-     text-align: center;
-     font-family: 'Baloo 2', cursive;
-     font-size: 13.5px;
-     cursor: text;
-     background-color: rgb(250, 250, 250);
+.form_section_description textarea {
+     height: auto;
 }
 
 /* ---------IMAGEN---------- */
@@ -109,6 +103,25 @@
 .container select option {
      font-family: 'Baloo 2', cursive;
      cursor: pointer;
+}
+
+/* --------------ERRORS----------------- */
+.errors_container,
+.errors_description_container {
+     text-align: center;
+}
+
+.errors_container p,
+.errors_description_container p {
+     color: red;
+     margin-top: 10px;
+     cursor: default;
+     font-size: 20px;
+     font-family: 'Baloo 2', cursive;
+}
+
+.errors_description_container p {
+     margin: 10px auto 40px;
 }
 
 /* -------------DELETE------------------ */
@@ -153,7 +166,7 @@
      display: flex;
      width: 250px;
      height: 70px;
-     margin: 80px auto 50px;
+     margin: -10px auto 50px;
      cursor: pointer;
      border-radius: 20px;
      border: solid 1px #37063d;
@@ -239,6 +252,18 @@
      .form_container_section_img input {
           border-radius: 15px;
           cursor: text;
+     }
+
+     .errors_container {
+          text-align: center;
+     }
+
+     .errors_container p {
+          color: red;
+          margin-top: -30px;
+          cursor: default;
+          font-size: 20px;
+          font-family: 'Baloo 2', cursive;
      }
 
      .form_section textarea {
