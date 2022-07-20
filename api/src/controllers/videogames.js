@@ -1,13 +1,12 @@
 const axios = require('axios');
 const { Videogame, Genre } = require('../db');
 const { API_KEY } = process.env;
-const key = '04429409f80343afa0c07f8723ef54eb';
 
 //---------------OBTENER TODOS LOS JUEGOS PARA EL HOME---------------
 const getGamesApi = async () => {
      let gamesApi = [];
      for (var i = 1; i < 6; i++) {
-          const apiUrl = await axios.get(`https://api.rawg.io/api/games?page=${i}&key=${key}`);
+          const apiUrl = await axios.get(`https://api.rawg.io/api/games?page=${i}&key=${API_KEY}`);
           const gApi = await apiUrl.data.results.map(
                ({ id, name, background_image, genres, rating_top }) => ({
                     id,
