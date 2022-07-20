@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -31,11 +31,11 @@ body {
      display: flex;
      width: 100vw;
      height: 100vh;
-}
+} */
 
 /* Logos ------------------------------------------ */
 
-.logos_pc {
+/* .logos_pc {
      display: flex;
      flex-direction: row;
      position: absolute;
@@ -53,11 +53,11 @@ body {
      width: 30px;
      height: 50px;
      padding: 20px 42px 0px;
-}
+} */
 
 /* Logos Responsive ------------------------------ */
 
-.logos_responsive {
+/* .logos_responsive {
      display: none;
      margin: auto;
 }
@@ -69,11 +69,11 @@ body {
 
 .logos_responsive .logo img {
      margin-left: 13.6px;
-}
+} */
 
 /* Info -------------------------------------------- */
 
-.home_info {
+/* .home_info {
      position: absolute;
      display: flex;
      flex-direction: column;
@@ -85,22 +85,13 @@ body {
      z-index: 2;
      backdrop-filter: blur(15px);
      background: rgba(6, 19, 52, 0.34);
-}
+} */
 
 /* Fonts ------------------------------------- */
 
-.home_info h1 {
+/* .home_info h1 {
      margin-top: 50px;
      font-family: 'Audiowide', cursive;
-     /* font-family: 'Goldman', cursive; */
-     /* font-family: 'B612', sans-serif; */
-     /* font-family: 'Cinzel Decorative', cursive; */
-     /* font-family: 'Kodchasan', sans-serif; */
-     /* font-family: 'Trade Winds', cursive; */
-     /* font-family: 'Wallpoet', cursive; */
-     /* font-family: 'Black Ops One', cursive; */
-     /* font-family: 'Press Start 2P', cursive; */
-     /* font-family: 'Sirin Stencil', cursive; */
      font-size: 60px;
      text-align: center;
      background-image: linear-gradient(20deg, #72009b 20px, #1c027b);
@@ -124,9 +115,6 @@ body {
 .home_info p,
 .a6v5 {
      font-family: 'Baloo 2', cursive;
-     /* font-family: 'Sirin Stencil', cursive; */
-     /* font-family: 'Amaranth', sans-serif; */
-     /* font-family: 'Macondo', cursive; */
      font-size: 25px;
      padding: 0px 25px;
      text-align: center;
@@ -155,7 +143,6 @@ body {
      transition: 0.5s;
      position: relative;
      font-size: 17px;
-     /* background: #333; */
      border: none;
      color: #fff;
      cursor: pointer;
@@ -163,11 +150,8 @@ body {
 
 .link_button:hover {
      letter-spacing: 0.25em;
-     /* background: #ff1867; */
      background-color: rgba(139, 0, 148, 0.439);
-     /* color: #ff1867; */
      color: rgba(139, 0, 148, 0.439);
-     /* box-shadow: 0 0 45px #ff1867; */
      box-shadow: 0 0 40px 10px rgba(139, 0, 148, 0.439);
 }
 
@@ -175,8 +159,6 @@ body {
      content: '';
      position: absolute;
      inset: 2px;
-     /* background: #222222; */
-     /* background-color:rgba(139, 0, 148, 0.439);  */
      background-color: rgb(13, 9, 75);
 }
 
@@ -232,11 +214,11 @@ body {
 
 .link_button i:hover {
      background-color: rgba(139, 0, 148, 0.439);
-}
+} */
 
 /* Slider -------------------------------------------------- */
 
-.slider_frame {
+/* .slider_frame {
      position: absolute;
      width: 69%;
      height: auto;
@@ -295,21 +277,21 @@ body {
      100% {
           margin-left: -300%;
      }
-}
+} */
 
 /* DOTS -------------------------------------- */
 
-.dots {
+/* .dots {
      width: 160px;
      height: auto;
      margin-top: 55px;
      margin-left: 60px;
      z-index: 5;
-}
+} */
 
 /*--------RESPONSIVE--------  */
 
-@media (max-width: 1422px) {
+/* @media (max-width: 1422px) {
      .logos_pc {
           display: none;
      }
@@ -384,4 +366,4 @@ body {
      .logos_responsive {
           margin: auto;
      }
-}
+} */

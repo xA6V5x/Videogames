@@ -1,4 +1,4 @@
-.intro {
+/* .intro {
      position: fixed;
      top: 0;
      background-image: url('https://c.tenor.com/fPzeECVvqWMAAAAC/game-over-fail.gif');
@@ -24,7 +24,6 @@
 }
 
 .introText h2 {
-     /* font-family: 'Trade Winds', cursive; */
      font-family: 'Press Start 2P', cursive;
      margin: 0;
      color: rgb(139, 139, 139);
@@ -86,4 +85,4 @@
      h2 {
           padding-bottom: 30px;
      }
-}
+} */

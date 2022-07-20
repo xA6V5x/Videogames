@@ -1,7 +1,4 @@
-body {
-     margin: 0;
-}
-
+/* 
 .container {
      margin: 0;
      padding: 0;
@@ -21,15 +18,11 @@ body {
 
 .gamesArea {
      display: flex;
-     /* margin-top: 150px; */
-     /* margin-left: 300px; */
      margin-left: 252px;
      flex-wrap: wrap;
      justify-content: space-around;
      backdrop-filter: blur(12px);
      border-radius: 25px;
-     /* background-color: rgb(23, 23, 23); */
-     /* background-color: #000b17 ; */
 }
 
 .games_alert {
@@ -95,11 +88,11 @@ body {
      font-family: 'Baloo 2', cursive;
      line-height: 40px;
      font-size: 35px;
-}
+} */
 
 /* ---------------RESPONSIVE--------------- */
 
-@media (max-height: 895px) {
+/* @media (max-height: 895px) {
      .gamesArea {
           display: flex;
           margin-left: 0;
@@ -127,4 +120,4 @@ body {
      .games_alert {
           margin: 0;
      }
-}
+} */
