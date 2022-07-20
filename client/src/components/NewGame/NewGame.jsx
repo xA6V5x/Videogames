@@ -13,8 +13,18 @@ function validateFomr(input) {
 
      if (!input.name) {
           errors.name = '☢ You must write a name 	☢';
+     } else if (!/^[A-Z][A-Za-z0-9_: &()]+$/.test(input.name)) {
+          errors.name = '☢ The first letter of the name must be a capital letter ☢';
      } else {
           errors.name = '';
+     }
+
+     if (input.img) {
+          if (!/(http)?s?:?(\/\/[^"']*\.(?:png|jpg|jpeg|gif|png|svg))/.test(input.img)) {
+               errors.img = '☢ The text entered is not a URL of a Image ☢';
+          } else {
+               errors.img = '';
+          }
      }
 
      if (input.platforms.length === 0) {
@@ -148,6 +158,7 @@ const NewGame = () => {
           if (
                input.name &&
                !errors.name &&
+               !errors.img &&
                !errors.platforms &&
                !errors.genres &&
                !errors.released &&
@@ -207,7 +218,11 @@ const NewGame = () => {
                                         placeholder="URL Image. . ."
                                         onChange={(e) => handleChange(e)}
                                    />
-                                   <div className={styles.form_section_img}>
+                                   <div
+                                        className={
+                                             !errors.img ? styles.form_section_img : styles.none
+                                        }
+                                   >
                                         <img
                                              src={
                                                   input.img
@@ -216,6 +231,9 @@ const NewGame = () => {
                                              }
                                              alt="Game Img"
                                         />
+                                   </div>
+                                   <div className={styles.errors_container}>
+                                        <p>{errors.img}</p>
                                    </div>
                               </div>
                               {/* ------------PLATFORMS---------- */}

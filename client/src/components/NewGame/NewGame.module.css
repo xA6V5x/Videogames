@@ -64,6 +64,10 @@
      height: auto;
 }
 
+.none {
+     display: none;
+}
+
 /* ---------IMAGEN---------- */
 
 .form_section_img {
@@ -252,18 +256,6 @@
      .form_container_section_img input {
           border-radius: 15px;
           cursor: text;
-     }
-
-     .errors_container {
-          text-align: center;
-     }
-
-     .errors_container p {
-          color: red;
-          margin-top: -30px;
-          cursor: default;
-          font-size: 20px;
-          font-family: 'Baloo 2', cursive;
      }
 
      .form_section textarea {
