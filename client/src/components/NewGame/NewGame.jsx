@@ -109,7 +109,32 @@ const NewGame = () => {
           );
      }
 
-     //borrar manualmente las plataformas o generos no requeridos
+     //Para los select(platforms & genres)
+     function handleSelect(e) {
+          let rev = input[e.target.name].filter((data) => data === e.target.value);
+
+          rev.length > 0
+               ? alert(
+                      `The "${e.target.value}" ${
+                           e.target.value == 'genres' ? 'genre' : 'platform'
+                      } has already been added`
+                 )
+               : setInput({
+                      ...input,
+                      [e.target.name]: [
+                           ...input[e.target.name],
+                           e.target.name == 'genres' ? e.target.value : `${e.target.value}, `,
+                      ],
+                 });
+          setErrors(
+               validateFomr({
+                    ...input,
+                    [e.target.name]: e.target.value,
+               })
+          );
+     }
+
+     //Borrar manualmente las plataformas o generos no requeridos
      // function handleDelete(e) {
      //      setInput({
      //           [e.target.name]: input[e.target.name].filter((data) => data !== e),
@@ -128,28 +153,6 @@ const NewGame = () => {
                ...input,
                genres: input.genres.filter((data) => data !== e),
           });
-     }
-
-     //Para los select(platforms y genres)
-     function handleSelect(e) {
-          let rev = input[e.target.name].filter((data) => data === e.target.value);
-
-          rev.length > 0
-               ? alert(
-                      `The "${e.target.value}" ${
-                           e.target.value == 'genres' ? 'genre' : 'platform'
-                      } has already been added`
-                 )
-               : setInput({
-                      ...input,
-                      [e.target.name]: [...input[e.target.name], e.target.value],
-                 });
-          setErrors(
-               validateFomr({
-                    ...input,
-                    [e.target.name]: e.target.value,
-               })
-          );
      }
 
      // Para enviar la informacion
@@ -201,6 +204,7 @@ const NewGame = () => {
                                         name="name"
                                         maxLength="24"
                                         placeholder="Game Name. . ."
+                                        autoComplete="off"
                                         onChange={(e) => handleChange(e)}
                                    />
                                    <div className={styles.errors_container}>
@@ -216,6 +220,7 @@ const NewGame = () => {
                                         maxLength="257"
                                         name="img"
                                         placeholder="URL Image. . ."
+                                        autoComplete="off"
                                         onChange={(e) => handleChange(e)}
                                    />
                                    <div
