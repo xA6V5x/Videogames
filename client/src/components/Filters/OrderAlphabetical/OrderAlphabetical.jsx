@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { orderByAlphabetical } from '../../../redux/actions';
+import { orderByAlphabetical, setCurrentPage } from '../../../redux/actions';
 import styles from './OrderAlphabetical.module.css';
 
 const OrderAlphabetical = () => {
@@ -8,6 +8,7 @@ const OrderAlphabetical = () => {
 
      function handleClickOrder(e) {
           e.preventDefault();
+          dispatch(setCurrentPage(1));
           dispatch(orderByAlphabetical(e.target.value));
      }
 

@@ -101,7 +101,7 @@ function rootReducer(state = initialState, action) {
                return {
                     ...state,
                     gamesBefore: state.gamesAfter,
-                    allGames: state.allGames,
+                    allGames: [...state.gamesAfter],
                };
 
           case 'ORDER_BY_RATING': {

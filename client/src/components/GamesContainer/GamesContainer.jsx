@@ -16,6 +16,7 @@ const GamesContainer = () => {
      const indexOfLastGame = currentPage * gamesPerPage;
      const indexOfFirstGame = indexOfLastGame - gamesPerPage;
      const currentGames = allGames.slice(indexOfFirstGame, indexOfLastGame);
+
      const pagination = (pageNumber) => {
           setCurrentPage(pageNumber);
      };

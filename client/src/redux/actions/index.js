@@ -73,7 +73,6 @@ export const orderByRating = (payload) => {
 export const filterByOrigin = (payload) => {
      return {
           type: 'FILTER_BY_ORIGIN',
-          currentPage: 1,
           payload,
      };
 };
@@ -81,7 +80,6 @@ export const filterByOrigin = (payload) => {
 export const filterByGenre = (payload) => {
      return {
           type: 'FILTER_BY_GENRE',
-          currentPage: 1,
           payload,
      };
 };
@@ -89,15 +87,12 @@ export const filterByGenre = (payload) => {
 export const filterByRating = (payload) => {
      return {
           type: 'FILTER_BY_RATING',
-          currentPage: 1,
           payload,
      };
 };
 
 export const postGame = (payload) => {
      return async () => {
-          // const response = await axios.post('http://localhost:3001/videogames', payload);
-          // return response;
           return await axios.post('/videogames', payload);
      };
 };

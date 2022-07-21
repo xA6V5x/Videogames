@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { orderByRating } from '../../../redux/actions';
+import { orderByRating, setCurrentPage } from '../../../redux/actions';
 import styles from './OrderRating.module.css';
 
 const OrderRating = () => {
@@ -8,6 +8,7 @@ const OrderRating = () => {
 
      function handleClickOrder(e) {
           e.preventDefault();
+          dispatch(setCurrentPage(1));
           dispatch(orderByRating(e.target.value));
      }
 
