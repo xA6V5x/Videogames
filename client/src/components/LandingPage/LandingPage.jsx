@@ -6,7 +6,7 @@ import sliderLanding2 from '../../assets/SliderLanding/sliderLanding1.jpg';
 import sliderLanding3 from '../../assets/SliderLanding/sliderLanding3.jpg';
 import sliderLanding4 from '../../assets/SliderLanding/sliderLanding5.jpg';
 import GameOver from '../../assets/SliderLanding/GameOver.jpg';
-import logoFb from '../../assets/Logos/logoFb.png';
+import logoIn from '../../assets/Logos/logoIn.png';
 import logoGH from '../../assets/Logos/logoGH.png';
 import logoIg from '../../assets/Logos/logoIg.png';
 import logoTw from '../../assets/Logos/logoTw.png';
@@ -30,12 +30,12 @@ const LandingPage = () => {
                          </div>
                     </a>
                     <a
-                         href="https://www.facebook.com/agustin.ojeda.9256"
+                         href="https://www.linkedin.com/in/agustin-manuel-ojeda-916547239/"
                          rel="noreferrer"
                          target="_blank"
                     >
                          <div className={styles.logo}>
-                              <img src={logoFb} alt="Facebook" />{' '}
+                              <img src={logoIn} alt="linkedin" />{' '}
                          </div>
                     </a>
                     <a href="https://github.com/xA6V5x" rel="noreferrer" target="_blank">
@@ -86,12 +86,12 @@ const LandingPage = () => {
                               </div>
                          </a>
                          <a
-                              href="https://www.facebook.com/agustin.ojeda.9256"
+                              href="https://www.linkedin.com/in/agustin-manuel-ojeda-916547239/"
                               rel="noreferrer"
                               target="_blank"
                          >
                               <div className={styles.logo}>
-                                   <img src={logoFb} alt="Facebook" />{' '}
+                                   <img src={logoIn} alt="linkedin" />{' '}
                               </div>
                          </a>
                          <a href="https://github.com/xA6V5x" rel="noreferrer" target="_blank">
