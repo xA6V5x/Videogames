@@ -53,13 +53,13 @@ const LandingPage = () => {
                     <p>
                          Game Over is a videogame digital distribution service developed by <br />{' '}
                          <a
-                              href="https://github.com/xA6V5x"
+                              href="https://www.linkedin.com/in/agustin-manuel-ojeda-916547239/"
                               rel="noreferrer"
                               target="_blank"
                               className={styles.a6v5}
                          >
                               {' '}
-                              xA6V5x Corporation.{' '}
+                              Agustin Ojeda.{' '}
                          </a>{' '}
                     </p>
 
