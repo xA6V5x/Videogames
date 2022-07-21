@@ -111,12 +111,13 @@ const NewGame = () => {
 
      //Para los select(platforms & genres)
      function handleSelect(e) {
-          let rev = input[e.target.name].filter((data) => data === e.target.value);
+          let revPlatform = input.platforms.filter((data) => data === `${e.target.value}, `);
+          let revGenre = input.genres.filter((data) => data === e.target.value);
 
-          rev.length > 0
+          revPlatform.length > 0 || revGenre.length > 0
                ? alert(
                       `The "${e.target.value}" ${
-                           e.target.value == 'genres' ? 'genre' : 'platform'
+                           e.target.name == 'platforms' ? 'platform' : 'genre'
                       } has already been added`
                  )
                : setInput({
@@ -182,11 +183,9 @@ const NewGame = () => {
                navigate('/Home');
           } else {
                setErrors(validateFomr(input));
-               alert('Please cheack the errors');
+               alert('Please check the errors and try again');
           }
      }
-     console.log(input);
-     console.log(errors);
 
      return (
           <div className={styles.container}>

@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+:root {
+     --width: 247.5px;
+     --padding: 9px;
+     --hovercolor: rgba(0, 100, 146, 0.799);
+     --width-collapsed: 45px;
+}
+
 .container {
      background: linear-gradient(-50deg, #052649 0%, #1f0557 40%, #28065a 60%, #5a0a65 100%);
      font-family: Arial, Helvetica, sans-serif;
      font-size: 16.2px;
      padding: 0;
      margin: 0;
-     width: 247.5px;
+     width: var(--width);
      height: 100%;
      color: white;
      position: fixed;
@@ -27,14 +36,14 @@ Link {
 
 /* -----------PROFILE------------- */
 .profile {
-     padding: 9px;
+     padding: var(--padding);
      margin: 0 13.5px;
      text-align: center;
 }
 
 .photo {
      box-sizing: border-box;
-     padding: 9px;
+     padding: var(--padding);
      margin: 0 auto;
 }
 
@@ -51,7 +60,7 @@ Link {
 }
 
 .item {
-     width: 232.5px;
+     width: var(--width - 15px);
      padding: 9px 4.5px 0px;
 }
 
@@ -79,7 +88,7 @@ Link {
 }
 
 .item .title {
-     padding: 9px 0;
+     padding: var(--padding) 0;
 }
 
 .title span {
@@ -88,14 +97,14 @@ Link {
 
 .item a:hover,
 .button_gamesAll:hover {
-     background-color: rgba(0, 100, 146, 0.799);
+     background-color: var(--hovercolor);
 }
 
 .icon {
      display: inline-block;
      box-sizing: border-box;
-     padding: 9px;
-     width: 45px;
+     padding: var(--padding);
+     width: var(--width-collapsed);
 }
 
 .icon img {
@@ -117,5 +126,9 @@ Link {
 
      .menu_items {
           margin-top: 0;
+     }
+
+     .button_gamesAll {
+          text-align: center;
      }
 }

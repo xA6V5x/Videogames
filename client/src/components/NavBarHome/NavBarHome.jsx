@@ -45,7 +45,7 @@ const NavBar = () => {
                     {/* ---------------items---------------- */}
                     <div className={styles.menu_items}>
                          <div className={styles.item}>
-                              <Link to="/Home">
+                              <Link to="/Home" className={styles.button_gamesAll}>
                                    <div className={styles.icon}>
                                         <img src={iconHome} alt="icon" />
                                    </div>
@@ -68,7 +68,7 @@ const NavBar = () => {
                               </button>
                          </div>
                          <div className={styles.item}>
-                              <Link to="/NewGame">
+                              <Link to="/NewGame" className={styles.button_gamesAll}>
                                    <div className={styles.icon}>
                                         <img src={iconAddGame} alt="icon" />
                                    </div>

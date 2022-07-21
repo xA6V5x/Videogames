@@ -39,5 +39,6 @@
 
 .container select option {
      font-family: 'Baloo 2', cursive;
+     text-align: center;
      cursor: pointer;
 }
