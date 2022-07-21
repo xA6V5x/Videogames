@@ -76,13 +76,24 @@
      }
      .introText {
           margin: auto;
-          width: 100%;
+          width: 80%;
           height: 100%;
           padding-top: 10%;
           backdrop-filter: blur(5px);
      }
-     .introText h1,
-     h2 {
-          padding-bottom: 30px;
+     .introText h1 {
+          font-size: 50px;
+          padding-bottom: 10px;
+     }
+     .introText h2 {
+          font-size: 35px;
+     }
+     .introButton {
+          font-size: 20px;
+          height: 20px;
+     }
+     .introButton span {
+          display: flex;
+          margin-top: -10px;
      }
 }
