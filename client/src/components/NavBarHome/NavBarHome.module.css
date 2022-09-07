@@ -5,6 +5,7 @@
      padding: 0;
      margin: 0;
      width: 247.5px;
+/*      width: 13.2%; */
      height: 100%;
      color: white;
      position: fixed;
@@ -14,10 +15,21 @@
 
 .sidemenu {
      color: white;
-     position: fixed;
+/*      position: fixed; */
      height: 100%;
-     left: 0;
-     top: 0;
+/*      left: 0;
+     top: 0; */
+     overflow-y: auto;
+}
+
+.sidemenu::-webkit-scrollbar {
+     width: 4px;
+     background-color:bisque;
+}
+
+.sidemenu::-webkit-scrollbar-thumb {
+     border-radius: 5px;
+     background-color: rgb(15, 89, 208);
 }
 
 Link {
@@ -27,14 +39,15 @@ Link {
 
 /* -----------PROFILE------------- */
 .profile {
-     padding: 9px;
-     margin: 0 13.5px;
+/*      padding: 9px; */
+     padding: 1vh 0 0 0;
+/*      margin: 0 13.5px; */
      text-align: center;
 }
 
 .photo {
      box-sizing: border-box;
-     padding: 9px;
+/*      padding: 9px; */
      margin: 0 auto;
 }
 
@@ -47,11 +60,13 @@ Link {
 .menu_items {
      overflow: hidden;
      border-top: solid 1.8px rgb(78, 0, 188);
-     margin: 9px 13.5px 0;
+/*      margin: 9px 13.5px 0; */
+     margin: 4% 5% 0;
 }
 
 .item {
-     width: (247.5px - 15px);
+/*      width: (247.5px - 15px); */
+     width: 100%;
      padding: 9px 4.5px 0px;
 }
 
@@ -105,9 +120,10 @@ Link {
 /* ------------FILTERS-------------- */
 
 .item_filter_portada {
-     position: absolute;
+/*      position: absolute; */
      width: (247.5 - 13.5px);
      padding: 0 4.5px 0;
+     margin-bottom: -50px;
 }
 
 .icon_sort {
