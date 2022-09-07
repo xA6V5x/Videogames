@@ -39,15 +39,15 @@ Link {
 
 /* -----------PROFILE------------- */
 .profile {
-/*      padding: 9px; */
-     padding: 1vh 0 0 0;
-/*      margin: 0 13.5px; */
+     padding: 9px;
+/*      padding: 1vh 0 0 0; */
+     margin: 0 13.5px;
      text-align: center;
 }
 
 .photo {
      box-sizing: border-box;
-/*      padding: 9px; */
+     padding: 9px;
      margin: 0 auto;
 }
 
