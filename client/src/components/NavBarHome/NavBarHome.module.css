@@ -24,7 +24,7 @@
 
 .sidemenu::-webkit-scrollbar {
      width: 4px;
-     background-color:bisque;
+     background-color: rgb(255, 228, 196);
 }
 
 .sidemenu::-webkit-scrollbar-thumb {
