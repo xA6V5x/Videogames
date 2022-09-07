@@ -102,7 +102,7 @@
 
 /* ----------RESPONSIVE--------- */
 
-@media (max-height: 895px) {
+/* @media (max-height: 895px) {
      .spinner_container {
           display: flex;
           flex-direction: column;
@@ -115,7 +115,7 @@
           border-radius: 25px;
           backdrop-filter: blur(12px);
      }
-}
+} */
 
 @media (max-width: 1100px) {
      .spinner_container {
