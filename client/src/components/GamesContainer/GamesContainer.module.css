@@ -91,7 +91,7 @@
 
 /* ---------------RESPONSIVE--------------- */
 
-@media (max-height: 895px) {
+/* @media (max-height: 895px) {
      .gamesArea {
           display: flex;
           margin-left: 0;
@@ -104,7 +104,7 @@
      .games_alert {
           margin: 0;
      }
-}
+} */
 
 @media (max-width: 910px) {
      .gamesArea {
