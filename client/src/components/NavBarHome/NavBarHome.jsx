@@ -34,7 +34,7 @@ const NavBar = () => {
 
      return (
           <div className={styles.container}>
-               <div className={styles.sidemenu && styles.menu_collapsed}>
+               <div className={styles.sidemenu}>
                     {/* ---------------profile------------- */}
                     <div className={styles.profile}>
                          <Link to="/" className={styles.photo}>
