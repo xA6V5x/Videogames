@@ -44,16 +44,16 @@ const NavBar = () => {
 
                     {/* ---------------items---------------- */}
                     <div className={styles.menu_items}>
-                         <div className={styles.item}>
-                              <Link to="/Home" className={styles.button_gamesAll}>
-                                   <div className={styles.icon}>
-                                        <img src={iconHome} alt="icon" />
-                                   </div>
-                                   <div className={styles.title}>
-                                        <span>Home</span>
-                                   </div>
-                              </Link>
-                         </div>
+//                          <div className={styles.item}>
+//                               <Link to="/Home" className={styles.button_gamesAll}>
+//                                    <div className={styles.icon}>
+//                                         <img src={iconHome} alt="icon" />
+//                                    </div>
+//                                    <div className={styles.title}>
+//                                         <span>Home</span>
+//                                    </div>
+//                               </Link>
+//                          </div>
                          <div className={styles.item}>
                               <button
                                    className={styles.button_gamesAll}
