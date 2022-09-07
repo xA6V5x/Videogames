@@ -136,7 +136,7 @@ Link {
 
 /* -----------------RESPONSIVE------------- */
 
-@media (max-height: 895px) {
+/* @media (max-height: 895px) {
      .container {
           font-size: 16.2px;
           width: 100%;
@@ -154,7 +154,7 @@ Link {
      .button_gamesAll {
           text-align: center;
      }
-}
+} */
 
 @media (max-width: 910px) {
      .container {
