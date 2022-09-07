@@ -79,7 +79,7 @@ body {
      display: flex;
      flex-direction: column;
      align-items: center;
-     width: 500px;
+     width: 26%;
      height: 100%;
      border-radius: 15px;
      margin: 0px;
@@ -321,7 +321,7 @@ body {
      }
 }
 
-@media (max-height: 895px) {
+/* @media (max-height: 895px) {
      .container {
           margin: 0;
           position: relative;
@@ -357,4 +357,4 @@ body {
      .logos_responsive {
           margin: auto;
      }
-}
+} */
