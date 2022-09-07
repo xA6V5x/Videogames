@@ -42,18 +42,18 @@ body {
      position: absolute;
      z-index: 100;
      margin-left: 76vw;
-     margin-top: 10px;
-     height: 50px;
+     margin-top: 1vh;
+     height: 2vh;
 }
 
 .logos_pc img {
-     width: 48px;
+     width: 2.6vw;
 }
 
 .logos_pc .logo {
-     width: 30px;
-     height: 50px;
-     padding: 20px 42px 0px;
+     width: 2vw;
+     height: 2vh;
+     padding: 2.1vh 2.215vw 0;
 }
 
 /* Logos Responsive ------------------------------ */
@@ -91,9 +91,11 @@ body {
 /* Fonts ------------------------------------- */
 
 .home_info h1 {
-     margin-top: 50px;
+/*      margin-top: 50px; */
+     margin-top: 5.9vh;
      font-family: 'Audiowide', cursive;
-     font-size: 60px;
+/*      font-size: 60px; */
+     font-size: 3.3vw;
      text-align: center;
      background-image: linear-gradient(20deg, #72009b 20px, #1c027b);
      background-clip: text;
@@ -105,7 +107,8 @@ body {
 }
 
 .home_info img {
-     padding: 40px 0px;
+/*      padding: 40px 0; */
+     padding: 4.7vh 0;
      width: 60%;
      background-repeat: no-repeat;
      background-position: 50%;
@@ -116,8 +119,9 @@ body {
 .home_info p,
 .a6v5 {
      font-family: 'Baloo 2', cursive;
-     font-size: 25px;
-     padding: 0px 25px;
+/*      font-size: 25px; */
+     font-size: 1.45vw;
+     padding: 0 25px;
      text-align: center;
      color: rgb(187, 203, 243);
      margin-top: 10px;
@@ -125,7 +129,8 @@ body {
 }
 
 .container_link {
-     margin-top: 80px;
+/*      margin-top: 80px; */
+     margin-top: 15%;
      cursor: pointer;
 }
 
@@ -220,13 +225,13 @@ body {
 /* Slider -------------------------------------------------- */
 
 .slider_frame {
+     margin-top: 11vh;
      position: absolute;
      width: 69%;
      height: auto;
-     margin-top: 100px;
-     right: 75px;
+     right: 4%;
      overflow: hidden;
-     border-radius: 20px;
+     border-radius: 2%;
 }
 
 .slider_frame ul {
@@ -282,7 +287,7 @@ body {
 
 /*--------RESPONSIVE--------  */
 
-@media (max-width: 1422px) {
+@media (max-width: 1000px) {
      .logos_pc {
           display: none;
      }
