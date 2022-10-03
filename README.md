@@ -1,7 +1,7 @@
-# Individual Project - Henry Videogames
+# Individual Project - Videogames
 
 <p align="right">
-  <img height="200" src="./videogame.png" />
+  <img height="200" src="https://media.wired.com/photos/62feb60bcea7c0581e825cb0/master/pass/Fate-of-Game-Preservation-Games-GettyImages-1170073827.jpg" />
 </p>
 
 ## Objetivos del Proyecto
