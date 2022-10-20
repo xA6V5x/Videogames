@@ -61,16 +61,9 @@ export const getGameByName = (name) => {
      };
 };
 
-export const orderByAlphabetical = (payload) => {
+export const orderBySomething = (payload) => {
      return {
-          type: 'ORDER_BY_ALPHABETICAL',
-          payload,
-     };
-};
-
-export const orderByRating = (payload) => {
-     return {
-          type: 'ORDER_BY_RATING',
+          type: 'ORDER_BY_SOMETHING',
           payload,
      };
 };

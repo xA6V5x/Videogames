@@ -5,8 +5,7 @@ import { useDispatch } from 'react-redux';
 
 import { getVideogames, getGenres } from '../../redux/actions/index.js';
 
-import OrderAlphabetical from '../Filters/OrderAlphabetical/OrderAlphabetical.jsx';
-import OrderRating from '../Filters/OrderRating/OrderRating.jsx';
+import OrderSomething from '../Filters/OrderSomething/OrderSomething.jsx';
 import FilterOrigin from '../Filters/FilterOrigin/FilterOrigin.jsx';
 import FilterGenre from '../Filters/FilterGenre/FilterGenre.jsx';
 import FilterRating from '../Filters/FilterRating/FilterRating.jsx';
@@ -100,10 +99,7 @@ const NavBarMobile = () => {
                                         </div>
                                    </div>
                                    <div className={styles.item_filter}>
-                                        <OrderAlphabetical />
-                                   </div>
-                                   <div className={styles.item_filter}>
-                                        <OrderRating />
+                                        <OrderSomething />
                                    </div>
                               </div>
                               <div className={styles.menu_items}>

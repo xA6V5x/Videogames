@@ -71,7 +71,7 @@ function rootReducer(state = initialState, action) {
                     gamesIsEmpty: payload,
                };
 
-          case 'ORDER_BY_ALPHABETICAL':
+          case 'ORDER_BY_SOMETHING':
                let gamesInOrder = [];
                if (payload === 'A-Z') {
                     gamesInOrder = [...state.allGames].sort(function (a, b) {
@@ -95,6 +95,39 @@ function rootReducer(state = initialState, action) {
                               return 1;
                          }
                          if (a.name > b.name) {
+                              return -1;
+                         }
+                         return 0;
+                    });
+                    return {
+                         ...state,
+                         gamesBefore: gamesInOrder,
+                         allGames: gamesInOrder,
+                    };
+               }
+               if (payload === 'Min-Max') {
+                    gamesInOrder = [...state.allGames].sort(function (a, b) {
+                         if (a.rating > b.rating) {
+                              return 1;
+                         }
+                         if (a.rating < b.rating) {
+                              return -1;
+                         }
+                         return 0;
+                    });
+
+                    return {
+                         ...state,
+                         gamesBefore: gamesInOrder,
+                         allGames: gamesInOrder,
+                    };
+               }
+               if (payload === 'Max-Min') {
+                    gamesInOrder = [...state.allGames].sort(function (a, b) {
+                         if (a.rating < b.rating) {
+                              return 1;
+                         }
+                         if (a.rating > b.rating) {
                               return -1;
                          }
                          return 0;

@@ -1,23 +1,22 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { orderByRating, setCurrentPage } from '../../../redux/actions';
-import styles from './OrderRating.module.css';
+import { orderBySomething, setCurrentPage } from '../../../redux/actions';
+import styles from './OrderSomething.module.css';
 
-const OrderRating = () => {
+const OrderSomething = () => {
      const dispatch = useDispatch();
 
      function handleClickOrder(e) {
           e.preventDefault();
           dispatch(setCurrentPage(1));
-          dispatch(orderByRating(e.target.value));
+          dispatch(orderBySomething(e.target.value));
      }
 
      return (
           <div className={styles.container}>
                <div className={styles.title}>
-                    <span>or Rating</span>
+                    <span>Alphabetically or Rating</span>
                </div>
-
                <select
                     onChange={(e) => {
                          handleClickOrder(e);
@@ -26,6 +25,8 @@ const OrderRating = () => {
                     <option defaultValue value="Random">
                          Random
                     </option>
+                    <option value="A-Z">A-Z</option>
+                    <option value="Z-A">Z-A</option>
                     <option value="Min-Max">Min-Max</option>
                     <option value="Max-Min">Max-Min</option>
                </select>
@@ -33,4 +34,4 @@ const OrderRating = () => {
      );
 };
 
-export default OrderRating;
+export default OrderSomething;
