@@ -20,7 +20,7 @@ const SearchBar = () => {
           if (gameState.length === 0) {
                return alert('Please include a name');
           } else {
-               dispatch(resetGames([]));
+               dispatch(resetGames());
                dispatch(getGameByName(gameState));
                setGameState('');
           }
