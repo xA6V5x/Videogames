@@ -10,12 +10,14 @@ import styles from './GamesContainer.module.css';
 
 const GamesContainer = () => {
      const allGames = useSelector((state) => state.allGames);
+
      const gamesIsEmpty = useSelector((state) => state.gamesIsEmpty);
      const [currentPage, setCurrentPage] = useState(1);
      const [gamesPerPage] = useState(15);
      const indexOfLastGame = currentPage * gamesPerPage;
      const indexOfFirstGame = indexOfLastGame - gamesPerPage;
-     const currentGames = allGames.slice(indexOfFirstGame, indexOfLastGame);
+     const currentGames =
+          allGames.length > 0 ? allGames.slice(indexOfFirstGame, indexOfLastGame) : [];
 
      const pagination = (pageNumber) => {
           setCurrentPage(pageNumber);

@@ -1,5 +1,10 @@
 import axios from 'axios';
 
+export const resetGames = () => {
+     return {
+          type: 'RESET_GAMES',
+     };
+};
 export const getVideogames = () => {
      return async (dispatch) => {
           let json = await axios.get('/videogames');

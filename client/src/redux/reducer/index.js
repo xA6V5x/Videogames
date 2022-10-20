@@ -14,6 +14,13 @@ function rootReducer(state = initialState, action) {
      const { type, payload } = action;
 
      switch (type) {
+          case 'RESET_GAMES':
+               return {
+                    ...state,
+                    allGames: [],
+                    gamesIsEmpty: ['algo'],
+               };
+
           case 'GET_VIDEOGAMES':
                if (payload.length === 0)
                     return {

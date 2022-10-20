@@ -13,7 +13,7 @@ import FilterRating from '../Filters/FilterRating/FilterRating.jsx';
 
 import SearchBar from '../SearchBar/SearchBar';
 import GameOver from '../../assets/SliderLanding/GameOver.jpg';
-import iconHome from '../../assets/IconsNav/iconHome.png';
+// import iconHome from '../../assets/IconsNav/iconHome.png';
 import iconAddGame from '../../assets/IconsNav/iconAddGame.png';
 import iconAllGames from '../../assets/IconsNav/iconAllGames.png';
 import iconSort from '../../assets/IconsNav/iconSort.png';

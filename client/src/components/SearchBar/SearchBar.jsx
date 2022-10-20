@@ -1,12 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { getGameByName } from '../../redux/actions';
+import { getGameByName, resetGames } from '../../redux/actions';
 import styles from './SearchBar.module.css';
 
 const SearchBar = () => {
-     const [gameState, setGameState] = useState('');
      const dispatch = useDispatch();
+     const [gameState, setGameState] = useState('');
 
      function handleKeyDown(e) {
           if (e.key === 'Enter') {
@@ -20,9 +20,9 @@ const SearchBar = () => {
           if (gameState.length === 0) {
                return alert('Please include a name');
           } else {
+               dispatch(resetGames([]));
                dispatch(getGameByName(gameState));
                setGameState('');
-               return alert('Looking for Games, please wait...');
           }
      }
 
