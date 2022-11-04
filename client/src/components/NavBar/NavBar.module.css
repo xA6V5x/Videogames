@@ -128,13 +128,13 @@
 
      .header_container {
           display: flex;
+          width: 100vw;
           justify-content: right;
-          width: 100%;
      }
 
      .button_modal img {
           height: 4vh;
-          margin: 2.5vh;
+          /* margin: 2.5vh; */
      }
 
      /* ---------------------------*/
