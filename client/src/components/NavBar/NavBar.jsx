@@ -41,11 +41,9 @@ const NavBar = () => {
                >
                     <div onClick={handleModalContainerClick} className={styles.menu_background}>
                          {/* ------------Close Modal------------  */}
-                         {/* <div className={styles.button_modal_container}> */}
                          <div className={styles.button_modal} onClick={() => setOpen(false)}>
                               <img src={Menu} alt="Menu" />
                          </div>
-                         {/* </div> */}
                          {/* ---------------profile------------- */}
                          <div className={styles.profile}>
                               <Link to="/" className={styles.photo}>
