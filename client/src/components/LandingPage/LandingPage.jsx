@@ -15,11 +15,6 @@ const LandingPage = () => {
      return (
           <div className={styles.container}>
                <div className={styles.logos_pc}>
-                    <a href="https://twitter.com/AgusManu_" rel="noreferrer" target="_blank">
-                         <div className={styles.logo}>
-                              <img src={logoTw} alt="Twitter" />
-                         </div>
-                    </a>
                     <a
                          href="https://www.instagram.com/new.affection_/"
                          rel="noreferrer"
@@ -71,11 +66,6 @@ const LandingPage = () => {
                     </Link>
 
                     <div className={styles.logos_responsive}>
-                         <a href="https://twitter.com/AgusManu_" rel="noreferrer" target="_blank">
-                              <div className={styles.logo}>
-                                   <img src={logoTw} alt="Twitter" />
-                              </div>
-                         </a>
                          <a
                               href="https://www.instagram.com/new.affection_/"
                               rel="noreferrer"
