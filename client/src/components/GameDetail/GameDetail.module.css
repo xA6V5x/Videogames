@@ -38,6 +38,7 @@
      background-position: 50%;
      border-radius: 15px;
      background-size: 100% auto;
+     object-fit: cover;
 }
 
 .details_all {
