@@ -5,6 +5,8 @@ import GameDetail from './components/GameDetail/GameDetail';
 import NewGame from './components/NewGame/NewGame';
 import NotFound from './components/NotFound/NotFound';
 
+//Ulises estuvo aquí
+
 function App() {
      return (
           <BrowserRouter>
